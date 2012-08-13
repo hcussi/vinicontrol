@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+    <queryString>
+		<![CDATA[SELECT
+     mosto_en_tanque.`codigo` AS mosto_en_tanque_codigo,
+     mosto_en_tanque.`descripcion` AS mosto_en_tanque_descripcion,
+     mosto_en_tanque.`fechaEgreso` AS mosto_en_tanque_fechaEgreso,
+     mosto_en_tanque.`fechaIngreso` AS mosto_en_tanque_fechaIngreso,
+     mosto_en_tanque.`volumenFinal` AS mosto_en_tanque_volumenFinal,
+     mosto_en_tanque.`volumenInicial` AS mosto_en_tanque_volumenInicial,
+     variedad.`descripcion` AS variedad_descripcion
+FROM
+     `variedad` variedad INNER JOIN `mosto_en_tanque` mosto_en_tanque ON variedad.`id` = mosto_en_tanque.`variedad_id`]]>
+    </queryString>
+    <field name="mosto_en_tanque_codigo" class="java.lang.String">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <field name="mosto_en_tanque_descripcion" class="java.lang.String">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <field name="mosto_en_tanque_fechaEgreso" class="java.sql.Timestamp">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <field name="mosto_en_tanque_fechaIngreso" class="java.sql.Timestamp">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <field name="mosto_en_tanque_volumenFinal" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <field name="mosto_en_tanque_volumenInicial" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <field name="variedad_descripcion" class="java.lang.String">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <background>
+        <band/>
+    </background>
+    <title>
+        <band height="72">
+            <frame>
+                <reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699"/>
+                <staticText>
+                    <reportElement x="20" y="20" width="474" height="43" forecolor="#FFFFFF"/>
+                    <textElement>
+                        <font size="34" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[Informe de Mosto en Tanque]]>
+                    </text>
+                </staticText>
+                <staticText>
+                    <reportElement x="405" y="1" width="180" height="20" forecolor="#FFFFFF"/>
+                    <textElement textAlignment="Right">
+                        <font size="14" isBold="false"/>
+                    </textElement>
+                    <text><![CDATA[Bodega Morales]]>
+                    </text>
+                </staticText>
+            </frame>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="13"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="21">
+            <line>
+                <reportElement x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+            </line>
+            <staticText>
+                <reportElement mode="Opaque" x="0" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Código]]>
+                </text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="79" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Descrip]]>
+                </text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="158" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Fecha Egre]]>
+                </text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="237" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Fecha Ing]]>
+                </text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="316" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Vol Final]]>
+                </text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="395" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Vol Inic]]>
+                </text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="474" y="0" width="79" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Variedad]]>
+                </text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="20">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+            </line>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="0" y="0" width="79" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{mosto_en_tanque_codigo}]]>
+                </textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="79" y="0" width="79" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{mosto_en_tanque_descripcion}]]>
+                </textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="158" y="0" width="79" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.sql.Timestamp"><![CDATA[$F{mosto_en_tanque_fechaEgreso}]]>
+                </textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="237" y="0" width="79" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.sql.Timestamp"><![CDATA[$F{mosto_en_tanque_fechaIngreso}]]>
+                </textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="316" y="0" width="79" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{mosto_en_tanque_volumenFinal}]]>
+                </textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="395" y="0" width="79" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{mosto_en_tanque_volumenInicial}]]>
+                </textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="474" y="0" width="79" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{variedad_descripcion}]]>
+                </textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band/>
+    </columnFooter>
+    <pageFooter>
+        <band height="17">
+            <textField>
+                <reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Right"/>
+                <textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]>
+                </textFieldExpression>
+            </textField>
+            <textField evaluationTime="Report">
+                <reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]>
+                </textFieldExpression>
+            </textField>
+            <textField pattern="EEEEE dd MMMMM yyyy">
+                <reportElement x="0" y="4" width="100" height="13"/>
+                <textElement/>
+                <textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]>
+                </textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+    <summary>
+        <band/>
+    </summary>
+</jasperReport>

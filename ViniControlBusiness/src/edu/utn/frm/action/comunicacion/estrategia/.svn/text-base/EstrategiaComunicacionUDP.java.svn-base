@@ -1,0 +1,249 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package edu.utn.frm.action.comunicacion.estrategia;
+
+import edu.utn.frm.action.comunicacion.eventos.EventDispatcher;
+import edu.utn.frm.action.comunicacion.PaqueteComunicacion;
+import edu.utn.frm.action.comunicacion.eventos.ConexionMessageEvent;
+import edu.utn.frm.action.comunicacion.eventos.NuevoPaqueteEvent;
+import edu.utn.frm.action.exception.ComunicacionException;
+import edu.utn.frm.action.log.LogManager;
+import edu.utn.frm.entities.comunicacion.ConexionIP;
+import edu.utn.frm.entities.comunicacion.ConfiguracionConexion;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+import java.net.UnknownHostException;
+import java.util.Date;
+import javax.swing.SwingWorker;
+import org.apache.log4j.Logger;
+
+/**
+ *
+ * @author Proyecto
+ */
+public class EstrategiaComunicacionUDP extends EventDispatcher implements IEstrategiaComunicacion {
+
+    private ConexionIP conexionIP;
+    private DatagramSocket datagramSocket = null;
+    private boolean DEBUG = false;
+    private static Logger logger = Logger.getLogger(EstrategiaComunicacionUDP.class);
+    private DatagramSocket dsocket;
+    private SwingWorker worker;
+    private LogManager logManager = LogManager.getInstance();
+
+    public EstrategiaComunicacionUDP() {
+        super();
+    }
+
+    public void setDebugMode() {
+        DEBUG = true;
+    }
+
+    public void deactivateDebugMode() {
+        DEBUG = false;
+    }
+
+    public void setConfiguracionConexion(ConfiguracionConexion configuracionConexion) {
+        logger.info("[EstrategiaComunicacionUDP.setConfiguracionConexion]");
+        logManager.addLog("[EstrategiaComunicacionUDP.setConfiguracionConexion]");
+        if (configuracionConexion instanceof ConexionIP) {
+            conexionIP = (ConexionIP) configuracionConexion;
+            logger.info("La conexión se ha seteado exitosamente");
+            logManager.addLog("La conexión se ha seteado exitosamente");
+        } else {
+            throw new RuntimeException("El tipo de Conexión no es válido");
+        }
+    }
+
+    public void enviarPaqueteComunicacion(PaqueteComunicacion paqueteComunicacion) {
+        logger.info("[EstrategiaComunicacionUDP.enviarPaqueteComunicacion]");
+        logManager.addLog("[EstrategiaComunicacionUDP.enviarPaqueteComunicacion]");
+        if (conexionIP == null) {
+            throw new RuntimeException("No hay ninguna conexión disponible para enviar el paquete");
+        }
+        try {
+            datagramSocket = new DatagramSocket( conexionIP.getPuerto() );
+            datagramSocket.connect(InetAddress.getByAddress(conexionIP.getDireccionIPv4Bytes()), conexionIP.getPuerto());
+            DatagramPacket packet = new DatagramPacket(paqueteComunicacion.getDatos(), paqueteComunicacion.getDatos().length);
+            logger.info("Se ha creado el socket para la comunicación");
+            logManager.addLog("Se ha creado el socket para la comunicación");
+            datagramSocket.send( packet );
+            logger.info("Se ha enviado el paquete exitosamente");
+            logManager.addLog("Se ha enviado el paquete exitosamente");
+            if (DEBUG) {
+                logger.info("El modo DEBUG esta activado");
+                logManager.addLog("El modo DEBUG esta activado");
+                populateDebugMessage(paqueteComunicacion);
+            } else {
+                populateMessage(paqueteComunicacion);
+            }
+
+        } catch (UnknownHostException ex) {
+            logger.error("El host de la conexión no es válido");
+            logManager.addLog("El host de la conexión no es válido");
+        } catch (SocketException ex) {
+            logger.error("No se puede conectar al socket, esta siendo ocupado");
+            logManager.addLog("No se puede conectar al socket, esta siendo ocupado");
+        } catch (IOException ex) {
+            logger.error(ex.getMessage() );
+            logManager.addLog(ex.getMessage());
+        } finally {
+            if (datagramSocket != null) {
+                datagramSocket.close();
+                logger.info("Se ha cerrado la conexión exitosamente");
+                logManager.addLog("Se ha cerrado la conexión exitosamente");
+            }
+        }
+    }
+
+    public void recibirPaquete() throws SocketException, IOException {
+        logger.info("[EstrategiaComunicacionUDP.recibirPaquete]");
+        logManager.addLog("[EstrategiaComunicacionUDP.recibirPaquete]");
+        // Crea un socket para escuchar en el puerto.
+        if(dsocket == null || dsocket.isClosed()) {
+            dsocket = new DatagramSocket(conexionIP.getPuertoRecepcion(),InetAddress.getByAddress(conexionIP.getDireccionIPv4Bytes()));
+        }
+
+        worker = new SwingWorker() {
+            // Crea un buffer para alamcenar los datagramas. Si el paquete es mas largo
+            // que el buffer, el exceso será descartado
+            
+            byte[] buffer = new byte[12];
+            // Crea un paquete para recibir los datos adentro del buffer
+            DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
+
+            @Override
+            protected Object doInBackground() throws Exception {
+                logger.info("[SwingWorker.doInBackground]");
+                logManager.addLog("[SwingWorker.doInBackground]");
+                logger.info("Preparado para recibir tramas UDP en background");
+                logManager.addLog("Preparado para recibir tramas UDP en background");
+                // Espera hasta recibir un datagrama
+                dsocket.receive(packet);
+                dispatchEvent(new NuevoPaqueteEvent(this, buffer));
+                return null;
+            }
+
+            @Override
+            protected void done() {
+                logger.info("[SwingWorker.done]");
+                logManager.addLog("[SwingWorker.done]");
+                try {
+                    logger.info("Trama UDP Recibida. Preparando para recibir nuevamente");
+                    logManager.addLog("Trama UDP Recibida. Preparando para recibir nuevamente");
+                    if(!worker.isCancelled()) {
+                        recibirPaquete();
+                    }
+                } catch (SocketException ex) {
+                    logger.error("Ha ocurrido un error al recibir el paquete");
+                    logger.error(ex.getMessage());
+                } catch (IOException ex) {
+                    logger.error("Ha ocurrido un error al recibir el paquete");
+                    logger.error(ex.getMessage());
+                }
+            }
+        };
+        worker.execute();
+    }
+
+    public void detenerConexion() {
+        logger.info("[EstrategiaComunicacionUDP.detenerConexion]");
+        logManager.addLog("[EstrategiaComunicacionUDP.detenerConexion]");
+        logger.info("Deteniendo la conexión y liberando recursos");
+        logManager.addLog("Deteniendo la conexión y liberando recursos");
+        if(worker!=null) worker.cancel(true);
+        if(dsocket!=null && dsocket.isConnected()) dsocket.close();
+    }
+
+    private void populateMessage(PaqueteComunicacion paqueteComunicacion) {
+        byte[] datos = paqueteComunicacion.getDatos();
+        Integer idComando = paqueteComunicacion.getDatosInt(paqueteComunicacion.getDatosString(datos), 0, 4);
+
+        String message = "[" + new Date() + "] Enviando: ";
+        message += "idComando: " + idComando;
+        logger.info(message);
+        logManager.addLog(message);
+        dispatchEvent(new ConexionMessageEvent(this, message));
+    }
+
+    private void populateDebugMessage(PaqueteComunicacion paqueteComunicacion) {
+
+        byte[] temperatura = paqueteComunicacion.getDatos(0, 4);
+        String temperaturaString = paqueteComunicacion.getDatosInt(temperatura).toString();
+
+        byte[] nivel = paqueteComunicacion.getDatos(4, 8);
+        String nivelString = paqueteComunicacion.getDatosInt(nivel).toString();
+
+        byte[] estado = paqueteComunicacion.getDatos(8, 12);
+        String estadoString = paqueteComunicacion.getDatosInt(estado).toString();
+
+        String message = "[" + new Date() + "] Enviando: ";
+        message += "  temperatura: " + temperaturaString + "  nivel: " + nivelString +
+                "  estado: " + estadoString;
+        logger.info(message);
+        logManager.addLog(message);
+        dispatchEvent(new ConexionMessageEvent(this, message));
+    }
+
+    public void probarConfiguracionConexion() throws ComunicacionException {
+        logger.info("[EstrategiaComunicacionConexion.probarConfiguracionConexion]");
+        logManager.addLog("[EstrategiaComunicacionConexion.probarConfiguracionConexion]");
+        try {
+            datagramSocket = new DatagramSocket(conexionIP.getPuerto());
+            datagramSocket.connect(InetAddress.getByName(conexionIP.getDireccionIPv4()), conexionIP.getPuerto());
+            logger.info("La prueba de conexión ha sido exitosa");
+            logManager.addLog( "La prueba de conexión ha sido exitosa");
+            logger.info(conexionIP);
+            logManager.addLog(conexionIP.toString());
+        } catch (UnknownHostException ex) {
+            logger.error("El host de la conexión no es válido");
+            throw new ComunicacionException("El host de la conexión no es válido");
+        } catch (SocketException ex) {
+            logger.error("No se puede conectar al socket");
+            throw new ComunicacionException("No se puede conectar al socket");
+        } catch (IOException ex) {
+            logger.error("Ha ocurrido un error inesperado. " + ex.getMessage());
+            throw new ComunicacionException("Ha ocurrido un error inesperado. " + ex.getMessage());
+        } finally {
+            if (datagramSocket != null) {
+                datagramSocket.close();
+                logger.info("Cerrando la conexión");
+                logManager.addLog("Cerrando la conexión");
+            }
+        }
+    }
+
+    public void probarConfiguracionRecepcionConexion() throws ComunicacionException {
+        logger.info("[EstrategiaComunicacionConexion.probarConfiguracionRecepcionConexion]");
+        logManager.addLog("[EstrategiaComunicacionConexion.probarConfiguracionRecepcionConexion]");
+        try {
+            datagramSocket = new DatagramSocket(conexionIP.getPuerto());
+            datagramSocket.connect(InetAddress.getByName(conexionIP.getDireccionIPv4()), conexionIP.getPuertoRecepcion());
+            logger.info("La prueba de conexión ha sido exitosa");
+            logManager.addLog("La prueba de conexión ha sido exitosa");
+            logger.info(conexionIP);
+            logManager.addLog(conexionIP.toString());
+        } catch (UnknownHostException ex) {
+            logger.error("El host de la conexión no es válido");
+            throw new ComunicacionException("El host de la conexión no es válido");
+        } catch (SocketException ex) {
+            logger.error("No se puede conectar al socket");
+            throw new ComunicacionException("No se puede conectar al socket");
+        } catch (IOException ex) {
+            logger.error("Ha ocurrido un error inesperado. " + ex.getMessage());
+            throw new ComunicacionException("Ha ocurrido un error inesperado. " + ex.getMessage());
+        } finally {
+            if (datagramSocket != null) {
+                datagramSocket.close();
+                logger.info("Se ha cerrado la conexión exitosamente");
+                logManager.addLog("Se ha cerrado la conexión exitosamente");
+            }
+        }
+    }
+
+}

@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib
+END
+slf4j-jdk14-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/slf4j-jdk14-1.5.8.jar
+END
+jasperreports-3.6.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/jasperreports-3.6.0.jar
+END
+gnujaxp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/svn_vinicontrol/!svn/ver/52/trunk/ViniControlPersistence/lib/gnujaxp.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/dom4j-1.6.1.jar
+END
+jcommon-1.0.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_vinicontrol/!svn/ver/52/trunk/ViniControlPersistence/lib/jcommon-1.0.16.jar
+END
+hibernate-validator.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/hibernate-validator.jar
+END
+servlet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/svn_vinicontrol/!svn/ver/52/trunk/ViniControlPersistence/lib/servlet.jar
+END
+swtgraphics2d.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_vinicontrol/!svn/ver/52/trunk/ViniControlPersistence/lib/swtgraphics2d.jar
+END
+jtoaster-1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_vinicontrol/!svn/ver/45/trunk/ViniControlPersistence/lib/jtoaster-1.0.4.jar
+END
+jdom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/jdom.jar
+END
+jfreechart-1.0.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/svn_vinicontrol/!svn/ver/52/trunk/ViniControlPersistence/lib/jfreechart-1.0.13.jar
+END
+hibernate-annotations.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/hibernate-annotations.jar
+END
+iText-2.1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/svn_vinicontrol/!svn/ver/52/trunk/ViniControlPersistence/lib/iText-2.1.5.jar
+END
+log4j-1.2.15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/log4j-1.2.15.jar
+END
+javassist-3.9.0.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/javassist-3.9.0.GA.jar
+END
+ejb3-persistence.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/ejb3-persistence.jar
+END
+hibernate-commons-annotations.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/hibernate-commons-annotations.jar
+END
+jfreechart-1.0.13-swt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/svn_vinicontrol/!svn/ver/52/trunk/ViniControlPersistence/lib/jfreechart-1.0.13-swt.jar
+END
+hibernate-entitymanager.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/hibernate-entitymanager.jar
+END
+jta-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/jta-1.1.jar
+END
+commons-digester.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/commons-digester.jar
+END
+hibernate3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/hibernate3.jar
+END
+jfreechart-1.0.13-experimental.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/svn_vinicontrol/!svn/ver/52/trunk/ViniControlPersistence/lib/jfreechart-1.0.13-experimental.jar
+END
+commons-collections-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/commons-collections-3.1.jar
+END
+hibernate-core.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/hibernate-core.jar
+END
+antlr-2.7.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/antlr-2.7.6.jar
+END
+mysql-connector-java-5.1.8-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/mysql-connector-java-5.1.8-bin.jar
+END
+xml-apis.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/xml-apis.jar
+END
+groovy-all.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/groovy-all.jar
+END
+commons-logging.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/commons-logging.jar
+END
+slf4j-api-1.5.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/lib/slf4j-api-1.5.8.jar
+END
+commons-beanutils-1.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/svn_vinicontrol/!svn/ver/78/trunk/ViniControlPersistence/lib/commons-beanutils-1.8.1.jar
+END

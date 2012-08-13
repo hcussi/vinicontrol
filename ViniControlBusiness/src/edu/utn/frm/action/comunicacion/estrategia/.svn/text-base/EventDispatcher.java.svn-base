@@ -1,0 +1,43 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package edu.utn.frm.action.comunicacion.estrategia;
+
+import edu.utn.frm.action.comunicacion.eventos.ConexionMessageEvent;
+import edu.utn.frm.action.comunicacion.eventos.ConexionMessageListener;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ *
+ * @author Proyecto
+ */
+public abstract class EstrategiaComunicacion implements IEstrategiaComunicacion{
+
+    protected List<ConexionMessageListener> listeners;
+
+    public EstrategiaComunicacion(){
+        listeners = new ArrayList<ConexionMessageListener>();
+    }
+
+    public void addEventListener(ConexionMessageListener conexionMessageListener){
+        if( listeners != null && !listeners.contains(conexionMessageListener) ){
+            listeners.add(conexionMessageListener);
+        }
+    }
+
+    public void removeEventListener(ConexionMessageListener conexionMessageListener){
+        if( listeners != null ){
+            listeners.remove(conexionMessageListener);
+        }
+    }
+
+    protected void dispatchEvent( ConexionMessageEvent event ){
+        for (ConexionMessageListener conexionMessageListener : listeners) {
+            conexionMessageListener.updateMessage(event);
+        }
+    }
+
+}

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/svn_vinicontrol/!svn/ver/5/trunk/ViniControlBusiness/src/edu/utn/frm/action/operacion
+END
+Comando.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/svn_vinicontrol/!svn/ver/77/trunk/ViniControlBusiness/src/edu/utn/frm/action/operacion/Comando.java
+END
+ComandoFinRemontaje.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/svn_vinicontrol/!svn/ver/11/trunk/ViniControlBusiness/src/edu/utn/frm/action/operacion/ComandoFinRemontaje.java
+END
+ComandoRemontaje.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/svn_vinicontrol/!svn/ver/11/trunk/ViniControlBusiness/src/edu/utn/frm/action/operacion/ComandoRemontaje.java
+END
+IComandoTanque.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/svn_vinicontrol/!svn/ver/10/trunk/ViniControlBusiness/src/edu/utn/frm/action/operacion/IComandoTanque.java
+END
+ComandoBajarTemperatura.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/svn_vinicontrol/!svn/ver/11/trunk/ViniControlBusiness/src/edu/utn/frm/action/operacion/ComandoBajarTemperatura.java
+END
+FactoriaComandos.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/svn_vinicontrol/!svn/ver/10/trunk/ViniControlBusiness/src/edu/utn/frm/action/operacion/FactoriaComandos.java
+END

@@ -1,0 +1,54 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package edu.utn.frm.ui;
+
+import java.awt.Image;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+
+/**
+ *
+ * @author Proyecto
+ */
+public class IconManager {
+
+    private static IconManager instance;
+
+    private IconManager(){
+
+    }
+
+    public static IconManager getInstance(){
+        if( instance == null ){
+            instance = new IconManager();
+        }
+        return instance;
+    }
+
+    public Image getSplashIcon(){
+        return new ImageIcon(getClass().getResource("/edu/utn/frm/ui/resources/image/loadViniControlApp.jpg")).getImage();
+    }
+
+    public Image getMainIcon(){
+        return new ImageIcon(getClass().getResource("/edu/utn/frm/ui/resources/image/icon.png")).getImage();
+    }
+
+    public Icon getFrameIcon(){
+        return new ImageIcon(getClass().getResource("/edu/utn/frm/ui/resources/image/icon.png"));
+    }
+
+    public Icon getAboutIcon(){
+        return new ImageIcon(getClass().getResource("/edu/utn/frm/ui/resources/image/ayuda.png"));
+    }
+
+    public Icon getAlarmaActivada(){
+        return new ImageIcon(getClass().getResource("/edu/utn/frm/ui/resources/image/alarma-activada.png"));
+    }
+
+    public Icon getAlarmaDesactivada(){
+        return new ImageIcon(getClass().getResource("/edu/utn/frm/ui/resources/image/alarma-desactivada.png"));
+    }
+}

@@ -1,0 +1,92 @@
+/*
+ * ControladorEstado.java
+ *
+ * Created on 27 de noviembre de 2006, 22:16
+ *
+ * To change this template, choose Tools | Template Manager
+ * and open the template in the editor.
+ */
+
+package edu.utn.frm.action.prediccion;
+
+import edu.utn.frm.action.LoginControlador;
+import edu.utn.frm.action.exception.PrediccionException;
+import edu.utn.frm.dao.demanda.estado.EstadoPrediccionDao;
+import edu.utn.frm.dao.demanda.estado.EstadoPrediccionTendenciaDao;
+import edu.utn.frm.dao.tanque.TanqueDao;
+import edu.utn.frm.entities.tanque.Tanque;
+import edu.utn.frm.entities.tanque.demanda.EstadoPrediccion;
+import edu.utn.frm.entities.tanque.demanda.EstadoPrediccionTendencia;
+import edu.utn.frm.entities.utils.Prediccion;
+import java.util.List;
+
+/**
+ *
+ * @author Proyecto
+ */
+public class GestorEstado {
+    
+    private EstadoPrediccionTendenciaDao estadoPrediccionTendenciaDao;
+    private TanqueDao tanqueDao;
+    private EstadoPrediccionDao estadoPrediccionDao;
+        
+    /**
+     * Creates a new instance of ControladorEstado
+     */
+    public GestorEstado() {
+        estadoPrediccionTendenciaDao=new EstadoPrediccionTendenciaDao(LoginControlador.getInstance().getUsuario());
+        estadoPrediccionDao=new EstadoPrediccionDao(LoginControlador.getInstance().getUsuario());
+        tanqueDao=new TanqueDao(LoginControlador.getInstance().getUsuario());
+    }
+
+    public EstadoPrediccion findEstado() {
+               
+        List<EstadoPrediccion> list = estadoPrediccionDao.findAll();
+        return list.size()>0? list.get(0):null;
+    }
+    
+    public void validarEstado(Tanque tanqueAPredecir) throws PrediccionException {
+        
+        EstadoPrediccion estado=findEstado();
+        
+        if(estado==null){
+            estado=new EstadoPrediccion();
+            
+            estado.setAlfaTendencia(Prediccion.getAlfaTendencia());
+            estado.setBetaTendencia(Prediccion.getBetaTendencia());
+            estado.setPromTendencia(Prediccion.getPromTendencia());
+            estado.setTenTendencia(Prediccion.getTenTendencia());
+            try{
+            estadoPrediccionDao.save(estado);
+            }catch(Exception ex){
+                throw new PrediccionException("Error al guardar el estado predicción. "+ex.getMessage());
+            }
+        }
+        
+        validarEstadoTendencia(estado,tanqueAPredecir);
+    }
+    
+    public void validarEstadoTendencia(EstadoPrediccion estado,Tanque tanqueAPredecir) throws PrediccionException{
+        
+        EstadoPrediccionTendencia estadoTendencia= tanqueAPredecir.getEstadoPrediccionTendencia();
+        
+        if(estadoTendencia==null){
+            estadoTendencia=new EstadoPrediccionTendencia();
+            
+            estadoTendencia.setAlfaTendencia(estado.getAlfaTendencia());
+            estadoTendencia.setBetaTendencia(estado.getBetaTendencia());
+            estadoTendencia.setTenTendencia(estado.getTenTendencia());
+            estadoTendencia.setPromTendencia(estado.getPromTendencia());
+            estadoTendencia.setLastTendencia(0);
+            estadoTendencia.setEditTendencia(true);
+            tanqueAPredecir.setEstadoPrediccionTendencia(estadoTendencia);
+            try{
+                estadoPrediccionTendenciaDao.save(estadoTendencia);
+                tanqueDao.update(tanqueAPredecir);
+            }catch(Exception ex){
+                throw new PrediccionException("Error al guardar el estado predicción tendencia. "+ex.getMessage());
+            }
+        }
+    }
+    
+}

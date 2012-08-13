@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/base
+END
+EntityBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/base/EntityBase.java
+END
+ICopiable.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/base/ICopiable.java
+END
+IExportable.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/svn_vinicontrol/!svn/ver/94/trunk/ViniControlPersistence/src/edu/utn/frm/entities/base/IExportable.java
+END

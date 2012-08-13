@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/hql
+END
+JoinType.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/hql/JoinType.java
+END
+JoinedEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/hql/JoinedEntity.java
+END
+OrderClause.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/hql/OrderClause.java
+END
+HqlBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/hql/HqlBuilder.java
+END
+OrderType.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/hql/OrderType.java
+END

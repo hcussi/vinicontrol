@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/regla
+END
+ReglaControlRemontaje.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/svn_vinicontrol/!svn/ver/25/trunk/ViniControlPersistence/src/edu/utn/frm/entities/regla/ReglaControlRemontaje.java
+END
+RemontajeDia.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/svn_vinicontrol/!svn/ver/8/trunk/ViniControlPersistence/src/edu/utn/frm/entities/regla/RemontajeDia.java
+END
+MomentoRemontaje.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/svn_vinicontrol/!svn/ver/8/trunk/ViniControlPersistence/src/edu/utn/frm/entities/regla/MomentoRemontaje.java
+END
+ReglaControlTemperatura.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/regla/ReglaControlTemperatura.java
+END
+ReglaControlNivel.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/regla/ReglaControlNivel.java
+END
+ReglaControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/regla/ReglaControl.java
+END

@@ -1,0 +1,148 @@
+<exportacionTrazabilidad fechaHora="18/10/2009 15:00:00" >
+	<tanque codigo="T001" descripcion="Tanque N1 C1500L" capacidad="1500" unidad="LITRO" />
+		<mostoTanque codigo="MF0001" descripcion="Finca F001-F002" fechaIngreso="10/10/2009" fechaEgreso="17/10/2009" volumenInicial="9000" volumenFinal="1200" >
+			<pesada>
+				<pesadaItem fecha="10/10/2009 08:00:00" peso="5000" unidad="KG">
+					<camion capacidadKilos="6000" descripccion="" marca="MERCEDEZ" modelo="V300" patente="ASE345" />
+					<finca codigo="F001" descripcion="La Defensa" cantidadHectareas="400" razonSocial="Bodega Morales" />
+				</pesadaItem>
+				<pesadaItem fecha="10/10/2009 08:40:00" peso="4000" unidad="KG">
+					<camion capacidadKilos="5000" descripccion="" marca="MERCEDEZ" modelo="V250" patente="FRT567" />
+					<finca codigo="F002" descripcion="San Miguel" cantidadHectareas="200" razonSocial="Bodega Morales" />
+				</pesadaItem>
+			</pesada>
+			<variedad codigo="V001" descripcion="Cabernet Sauvignon" tinte="varietal" />
+		</mostoTanque>
+		<alarma>
+			<alarmaDia fecha="10/10/2009" >
+				<alarmaItem tipo="capacidad" hora="16:20:00" duracion="00:02:12" />
+				<alarmaItem tipo="remontaje" hora="09:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="09:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="12:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="12:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="15:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="15:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="18:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="18:30" accion="fin" />
+			</alarmaDia>
+			<alarmaDia fecha="11/10/2009" >
+				<alarmaItem tipo="temperatura" hora="12:00:00" duracion="00:00:10" />
+				<alarmaItem tipo="temperatura" hora="12:30:00" duracion="00:02:00" />
+				<alarmaItem tipo="remontaje" hora="09:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="09:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="12:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="12:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="15:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="15:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="18:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="18:30" accion="fin" />
+			</alarmaDia>
+			<alarmaDia fecha="12/10/2009" >
+				<alarmaItem tipo="temperatura" hora="11:30:00" duracion="00:01:25" />
+				<alarmaItem tipo="remontaje" hora="09:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="09:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="12:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="12:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="15:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="15:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="18:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="18:30" accion="fin" />
+			</alarmaDia>
+			<alarmaDia fecha="13/10/2009" >
+				<alarmaItem tipo="temperatura" hora="11:20:00" duracion="00:25:02" />
+				<alarmaItem tipo="remontaje" hora="09:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="09:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="12:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="12:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="15:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="15:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="18:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="18:30" accion="fin" />
+			</alarmaDia>
+			<alarmaDia fecha="14/10/2009" >
+				<alarmaItem tipo="remontaje" hora="09:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="09:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="12:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="12:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="15:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="15:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="18:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="18:30" accion="fin" />
+			</alarmaDia>
+			<alarmaDia fecha="15/10/2009" >
+				<alarmaItem tipo="remontaje" hora="09:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="09:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="12:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="12:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="15:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="15:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="18:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="18:30" accion="fin" />
+			</alarmaDia>
+			<alarmaDia fecha="16/10/2009" >
+				<alarmaItem tipo="remontaje" hora="09:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="09:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="12:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="12:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="15:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="15:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="18:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="18:30" accion="fin" />
+			</alarmaDia>
+			<alarmaDia fecha="17/10/2009" >
+				<alarmaItem tipo="nivelAzucar" hora="17/10/2009 17:02:00" />
+				<alarmaItem tipo="remontaje" hora="09:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="09:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="12:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="12:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="15:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="15:30" accion="fin" />
+				<alarmaItem tipo="remontaje" hora="18:00" accion="inicio" />
+				<alarmaItem tipo="remontaje" hora="18:30" accion="fin" />
+			</alarmaDia>
+		</alarma>
+		<remontaje>
+			<remontajeItem fecha="11/10/2009" >
+				<momentoRemontaje hora="09:00" duracion="00:00:30" />
+				<momentoRemontaje hora="12:00" duracion="00:00:30" />
+				<momentoRemontaje hora="15:00" duracion="00:00:30" />
+				<momentoRemontaje hora="18:00" duracion="00:00:30" />
+			</remontajeItem>
+			<remontajeItem fecha="12/10/2009" >
+				<momentoRemontaje hora="09:00" duracion="00:00:30" />
+				<momentoRemontaje hora="12:00" duracion="00:00:30" />
+				<momentoRemontaje hora="15:00" duracion="00:00:30" />
+				<momentoRemontaje hora="18:00" duracion="00:00:30" />
+			</remontajeItem>
+			<remontajeItem fecha="13/10/2009" >
+				<momentoRemontaje hora="09:00" duracion="00:00:30" />
+				<momentoRemontaje hora="12:00" duracion="00:00:30" />
+				<momentoRemontaje hora="15:00" duracion="00:00:30" />
+				<momentoRemontaje hora="18:00" duracion="00:00:30" />
+			</remontajeItem>
+			<remontajeItem fecha="14/10/2009" >
+				<momentoRemontaje hora="09:00" duracion="00:00:30" />
+				<momentoRemontaje hora="12:00" duracion="00:00:30" />
+				<momentoRemontaje hora="15:00" duracion="00:00:30" />
+				<momentoRemontaje hora="18:00" duracion="00:00:30" />
+			</remontajeItem>
+			<remontajeItem fecha="15/10/2009" >
+				<momentoRemontaje hora="09:00" duracion="00:00:30" />
+				<momentoRemontaje hora="12:00" duracion="00:00:30" />
+				<momentoRemontaje hora="15:00" duracion="00:00:30" />
+				<momentoRemontaje hora="18:00" duracion="00:00:30" />
+			</remontajeItem>
+			<remontajeItem fecha="16/10/2009" >
+				<momentoRemontaje hora="09:00" duracion="00:00:30" />
+				<momentoRemontaje hora="12:00" duracion="00:00:30" />
+				<momentoRemontaje hora="15:00" duracion="00:00:30" />
+				<momentoRemontaje hora="18:00" duracion="00:00:30" />
+			</remontajeItem>
+			<remontajeItem fecha="17/10/2009" duracion="00:00:30" >
+				<momentoRemontaje hora="09:00" duracion="00:00:30" />
+				<momentoRemontaje hora="12:00" duracion="00:00:30" />
+				<momentoRemontaje hora="15:00" duracion="00:00:30" />
+				<momentoRemontaje hora="18:00" duracion="00:00:30" />
+			</remontajeItem>
+		</remontaje>
+</exportacionTrazabilidad>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/demanda/estado
+END
+EstadoPrediccionTendenciaFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/svn_vinicontrol/!svn/ver/93/trunk/ViniControlPersistence/src/edu/utn/frm/dao/demanda/estado/EstadoPrediccionTendenciaFilter.java
+END
+EstadoPrediccionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/demanda/estado/EstadoPrediccionDao.java
+END
+EstadoPrediccionFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/demanda/estado/EstadoPrediccionFilter.java
+END
+EstadoPrediccionTendenciaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/svn_vinicontrol/!svn/ver/93/trunk/ViniControlPersistence/src/edu/utn/frm/dao/demanda/estado/EstadoPrediccionTendenciaDao.java
+END

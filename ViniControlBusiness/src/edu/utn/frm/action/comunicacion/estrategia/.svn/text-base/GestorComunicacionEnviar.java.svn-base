@@ -1,0 +1,112 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package edu.utn.frm.action.comunicacion.estrategia;
+
+import edu.utn.frm.action.comunicacion.GestorGeneralEstado;
+import edu.utn.frm.action.comunicacion.PaqueteComunicacion;
+import edu.utn.frm.action.exception.ComunicacionException;
+import edu.utn.frm.action.exception.GestorGeneralEstadoException;
+import edu.utn.frm.entities.comunicacion.ConexionIP;
+import edu.utn.frm.entities.comunicacion.ConexionSerie;
+import edu.utn.frm.entities.comunicacion.ConfiguracionConexion;
+import edu.utn.frm.entities.comunicacion.TipoConexion;
+import edu.utn.frm.entities.proceso.Proceso;
+import org.apache.log4j.Logger;
+
+/**
+ *
+ * @author Proyecto
+ */
+public class GestorComunicacionEnviar {
+
+    private static Logger logger = Logger.getLogger(GestorComunicacionEnviar.class);
+    private GestorGeneralEstado gestorGeneralEstado;
+
+    public GestorComunicacionEnviar(){
+        gestorGeneralEstado = GestorGeneralEstado.getInstance();
+    }
+
+    private IEstrategiaComunicacion getEstrategiaComunicacion(ConfiguracionConexion configuracionConexion){
+        logger.info("[GestorComunicacionEnviar.getEstrategiaComunicacion]");
+        IEstrategiaComunicacion estrategiaComunicacion = null;
+
+        if( configuracionConexion instanceof ConexionIP ){
+            ConexionIP conexionIP = (ConexionIP)configuracionConexion;
+            if( conexionIP.getTipoConexion().equals(TipoConexion.TCP) ){
+                estrategiaComunicacion = FactoriaEstrategia.getInstance().getEstrategia(
+                        FactoriaEstrategia.ESTRATEGIA_TCP);
+            }else{
+                estrategiaComunicacion = FactoriaEstrategia.getInstance().getEstrategia(
+                        FactoriaEstrategia.ESTRATEGIA_UDP);
+            }
+        }else if(configuracionConexion instanceof ConexionSerie){
+            estrategiaComunicacion = FactoriaEstrategia.getInstance().getEstrategia(
+                        FactoriaEstrategia.ESTRATEGIA_RS232);
+        }
+
+        return estrategiaComunicacion;
+    }
+
+    public void procesarPaquete(ConfiguracionConexion configuracionConexion, PaqueteComunicacion paqueteComunicacion) throws ComunicacionException{
+        logger.info("[GestorComunicacionEnviar.procesarPaquete]");
+        IEstrategiaComunicacion estrategiaComunicacion = getEstrategiaComunicacion(configuracionConexion);
+
+        if( estrategiaComunicacion != null ){
+            estrategiaComunicacion.enviarPaqueteComunicacion(paqueteComunicacion);
+        }
+    }
+
+    public void probarConexion(ConfiguracionConexion configuracionConexion) throws ComunicacionException{
+        logger.info("[GestorComunicacionEnviar.probarConexion]");
+        IEstrategiaComunicacion estrategiaComunicacion = getEstrategiaComunicacion(configuracionConexion);
+
+        if( estrategiaComunicacion != null ){
+            estrategiaComunicacion.setConfiguracionConexion(configuracionConexion);
+            estrategiaComunicacion.probarConfiguracionConexion();
+        }else{
+            logger.error("No se puede probar la Conexión. No se ha podido crear una Estrategia de Conexión");
+            throw new ComunicacionException("No se puede probar la Conexión. Intente más tarde");
+        }
+    }
+
+    public void probarConexionRecepcion(ConfiguracionConexion configuracionConexion) throws ComunicacionException{
+        logger.info("[GestorComunicacionEnviar.probarConexionRecepcion]");
+        IEstrategiaComunicacion estrategiaComunicacion = getEstrategiaComunicacion(configuracionConexion);
+
+        if( estrategiaComunicacion != null ){
+            estrategiaComunicacion.setConfiguracionConexion(configuracionConexion);
+            estrategiaComunicacion.probarConfiguracionRecepcionConexion();
+        }else{
+            logger.error("No se puede probar la Conexión. No se ha podido crear una Estrategia de Conexión");
+            throw new ComunicacionException("No se puede probar la Conexión. Intente más tarde");
+        }
+    }
+
+    public void enviarComandoBajarTemperatura(Proceso proceso) throws GestorGeneralEstadoException, ComunicacionException{
+        logger.info("[GestorComunicacionEnviar.enviarComandoBajarTemperatura]");
+        gestorGeneralEstado.enviarComandoBajarTemperatura(proceso);
+    }
+
+    public void enviarComandoRemontaje(Proceso proceso) throws GestorGeneralEstadoException, ComunicacionException{
+        logger.info("[GestorComunicacionEnviar.enviarComandoRemontaje]");
+        gestorGeneralEstado.enviarComandoRemontaje(proceso);
+    }
+
+    public void enviarComandoFinRemontaje(Proceso proceso) throws GestorGeneralEstadoException, ComunicacionException{
+        logger.info("[GestorComunicacionEnviar.enviarComandoFinRemontaje]");
+        gestorGeneralEstado.enviarComandoFinRemontaje(proceso);
+    }
+
+    public PaqueteComunicacion armarPaquete(int idTipoComando) {
+        logger.info("[GestorComunicacionEnviar.armarPaquete]");
+        return new GestorComunicacionArmar().armarPaqueteEnviar( idTipoComando );
+    }
+
+     public PaqueteComunicacion armarPaqueteSimulacion(int temperatura, int nivel, int estado) {
+        logger.info("[GestorComunicacionEnviar.armarPaqueteSimulacion]");
+        return new GestorComunicacionArmar().armarPaqueteEnviarSimulacion(temperatura, nivel, estado);
+    }
+}

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic
+END
+GenericDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/svn_vinicontrol/!svn/ver/82/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/GenericDao.java
+END
+GenericFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/GenericFilter.java
+END
+PersistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/PersistException.java
+END
+ValidateException.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/ValidateException.java
+END

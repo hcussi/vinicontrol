@@ -1,0 +1,121 @@
+package edu.utn.frm.ui.usuario;
+
+
+import edu.utn.frm.entities.usuario.Rol;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JCheckBox;
+import javax.swing.table.AbstractTableModel;
+
+public class RolModel extends AbstractTableModel {
+
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    private String[] columnNames = new String[]{"Seleccionado", "Código", "Descripción"};
+    private List<Rol> roles;
+    private List<JCheckBox> checks;
+    private boolean editable;
+
+    /**
+     *Constructor por defecto
+     */
+    public RolModel() {
+        super();
+        roles = new ArrayList<Rol>(0);
+        checks = new ArrayList<JCheckBox>(0);
+    }
+
+    /**
+     * @param moduloXML
+     * @param modXML
+     */
+    public RolModel(List<Rol> roles, boolean editable) {
+        super();
+        this.roles = roles;
+        this.editable = editable;
+        this.checks = new ArrayList<JCheckBox>();
+
+        //se crea un checkBox por cada modulo
+        for (Rol rol : roles) {
+            final JCheckBox checkBox = new JCheckBox();
+            //si el modulo esta seleccionado se selecciona el checkBox
+            checkBox.setSelected(rol.isSeleccionado());
+            checkBox.setEnabled(editable);
+            checkBox.addItemListener(new java.awt.event.ItemListener() {
+
+                public void itemStateChanged(java.awt.event.ItemEvent e) {
+                    setValueAt(checkBox, checks.indexOf(checkBox), 0);
+                }
+            });
+            this.checks.add(checkBox);
+        }
+    }
+
+    public int getColumnCount() {
+
+        return this.columnNames.length;
+    }
+
+    @Override
+    public String getColumnName(int columnIndex) {
+
+        return this.columnNames[columnIndex].toString();
+    }
+
+    public int getRowCount() {
+
+        int count = roles.size();
+
+        return count;
+    }
+
+    public Object getValueAt(int rowIndex, int columnIndex) {
+
+        if (rowIndex < roles.size()) {
+            if (columnIndex == 0) {
+                return checks.get(rowIndex);
+            } else if (columnIndex == 1) {
+                Rol rol = roles.get(rowIndex);
+                return rol.getCodigo();
+            } else if (columnIndex == 2) {
+                Rol rol = roles.get(rowIndex);
+                return rol.getDescripcion();
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public boolean isCellEditable(int rowIndex, int columnIndex) {
+
+        if (editable && columnIndex == 0 && rowIndex < roles.size()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    @Override
+    public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
+
+        if (editable  && columnIndex == 0 && rowIndex < roles.size()) {
+            boolean selected = ((JCheckBox) aValue).isSelected();
+            roles.get(rowIndex).setSeleccionado(selected);
+        }
+    }
+
+    public List<Rol> getSeleccionados(){
+        List<Rol> seleccionados = new ArrayList<Rol>();
+
+        for( Rol rol : roles ){
+            if( rol.isSeleccionado() ){
+                seleccionados.add(rol);
+            }
+        }
+
+        return seleccionados;
+    }
+}

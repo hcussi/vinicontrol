@@ -1,0 +1,598 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package edu.utn.frm.action.comunicacion;
+
+import edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir;
+import edu.utn.frm.action.comunicacion.eventos.AgregarProcesoEvent;
+import edu.utn.frm.action.comunicacion.eventos.EventDispatcher;
+import edu.utn.frm.action.comunicacion.eventos.NuevaAlarmaEvent;
+import edu.utn.frm.action.comunicacion.eventos.NuevoComandoEvent;
+import edu.utn.frm.action.comunicacion.eventos.NuevoEstadoTanqueEvent;
+import edu.utn.frm.action.comunicacion.eventos.RemoverProcesoEvent;
+import edu.utn.frm.action.comunicacion.eventos.ViniControlEvent;
+import edu.utn.frm.action.comunicacion.eventos.ViniControlListener;
+import edu.utn.frm.action.demanda.ControladorPrediccionTendencia;
+import edu.utn.frm.action.exception.ComunicacionException;
+import edu.utn.frm.action.exception.GestorGeneralEstadoException;
+import edu.utn.frm.action.exception.PrediccionException;
+import edu.utn.frm.action.log.LogManager;
+import edu.utn.frm.action.operacion.FactoriaComandos;
+import edu.utn.frm.action.operacion.IComandoTanque;
+import edu.utn.frm.dao.generic.PersistException;
+import edu.utn.frm.dao.proceso.ProcesoDao;
+import edu.utn.frm.dao.proceso.ProcesoFilter;
+import edu.utn.frm.entities.alarma.AlarmaNivelAzucar;
+import edu.utn.frm.entities.alarma.AlarmaNivelCapacidad;
+import edu.utn.frm.entities.alarma.AlarmaRemontaje;
+import edu.utn.frm.entities.alarma.AlarmaTemperatura;
+import edu.utn.frm.entities.comunicacion.ConfiguracionConexion;
+import edu.utn.frm.entities.proceso.EstadoProceso;
+import edu.utn.frm.entities.proceso.Proceso;
+import edu.utn.frm.entities.regla.ReglaControl;
+import edu.utn.frm.entities.regla.ReglaControlRemontaje;
+import edu.utn.frm.entities.tanque.EstadoTanque;
+import edu.utn.frm.entities.utils.DateOperations;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import javax.swing.Timer;
+import org.apache.log4j.Logger;
+
+/**
+ * Esta clase implementa el patrón singleton, se encarga de cargar en memoria todos los procesos
+ * que están en el estado iniciado en la base de datos. Después de iniciar cada proceso y asignarle
+ * los recursos se queda a la espera de los eventos que recibe de los gestores de comunicación.
+ * Se encarga de verificar las alarmas y crear los eventos de nuevas alarmas y de verificar el remontaje
+ * de cada tanque en particular asignado a cada proceso.
+ * @author Proyecto
+ */
+public class GestorGeneralEstado extends EventDispatcher implements ViniControlListener {
+
+    private static Logger logger = Logger.getLogger(GestorGeneralEstado.class);
+    private ProcesoDao procesoDao = new ProcesoDao();
+    private static GestorGeneralEstado instance;
+    private List<Proceso> procesos;
+    private List<GestorComunicacionRecibir> receivers;
+    private Timer timerRemontaje;
+    private Timer timerProceso;
+    private boolean isIniciado = false;
+    private LogManager logManager = LogManager.getInstance();
+    private ControladorPrediccionTendencia controladorPrediccionTendencia;
+    private static final int MINUTOS_PREDECIR = 60;
+
+    /**
+     * Crea una instancia de la clase GestorGeneralEstado
+     */
+    private GestorGeneralEstado() {
+        try {
+            controladorPrediccionTendencia = new ControladorPrediccionTendencia();
+            iniciar();
+        } catch (GestorGeneralEstadoException ex) {
+            logger.error("Ha fallado al tratar de iniciar los procesos");
+            logManager.addLog("Ha fallado al tratar de iniciar los procesos");
+            logger.error(ex.getMessage());
+            logManager.addLog(ex.getMessage());
+        }
+    }
+
+    /**
+     * 
+     * @return La instancia de la clase GestorGeneralEstado
+     */
+    public static GestorGeneralEstado getInstance() {
+        if (instance == null) {
+            instance = new GestorGeneralEstado();
+        }
+        return instance;
+    }
+
+    /**
+     * Recupera los procesos que deberían estar iniciados y los inicia
+     * @throws GestorGeneralEstadoException ha fallado al tratan de iniciar los procesos
+     */
+    public void iniciar() throws GestorGeneralEstadoException {
+        logger.info("[GestorGeneralEstado.iniciar]");
+        logManager.addLog("[GestorGeneralEstado.iniciar]");
+
+        if (isIniciado) {
+            logger.info("Ya esta iniciado, se va a intentar detener los procesos");
+            logManager.addLog("Ya esta iniciado, se va a intentar detener los procesos");
+            detener();
+        }
+        receivers = new ArrayList<GestorComunicacionRecibir>();
+        procesos = cargarProcesos();
+        for (Proceso proceso : procesos) {
+            try {
+                //Deberia iniciar en otro hilo
+                if(proceso.getTanque()!=null){
+                    iniciarProceso(proceso);
+                }
+            } catch (GestorGeneralEstadoException ex) {
+                logger.error(ex.getMessage());
+            }
+        }
+        logger.info("Iniciando el timer para controlar los remontajes");
+        logManager.addLog("Iniciando el timer para controlar los remontajes");
+        //Cada 30 segundos verificar el remontaje
+        timerRemontaje = new Timer(30000, new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                verificarRemontaje();
+            }
+        });
+        timerRemontaje.start();
+        isIniciado = true;
+        logger.info("Se han iniciado los procesos");
+        logManager.addLog("Se han iniciado los procesos");
+
+        //Cada 60 segundos verifica los procesos a detener
+        timerProceso = new Timer(60000, new ActionListener() {
+
+            public void actionPerformed(ActionEvent e) {
+                verificarProcesosADetener();
+            }
+        });
+        timerProceso.start();
+    }
+
+    /**
+     * Cada 60 segundos se verifica si un proceso deberia detenerse de acuerdo a la
+     * fecha actual con la fecha y hora de finalización del proceso
+     */
+    private void verificarProcesosADetener(){
+        Date fechaHoy = new Date();
+
+        for (Proceso proceso : this.procesos) {
+            Date fechaFinProceso = DateOperations.setTimeInDate(proceso.getFechaFin(), proceso.getHoraFin()) ;
+            if( DateOperations.compareMayorTime(fechaHoy, fechaFinProceso) ){
+                try {
+                    liberarRecursos(proceso,EstadoProceso.TERMINADO);
+                    try {
+                    procesoDao.update(proceso);
+                } catch (PersistException ex) {
+                    logger.error("Fallo al actualizar el proceso");
+                    logManager.addLog("Fallo al actualizar el proceso");
+                    logger.error("No se pudo actualizar el estado del proceso a terminado");
+                    logManager.addLog("No se pudo actualizar el estado del proceso a terminado");
+                    logger.error(ex.getMessage());
+                    logManager.addLog(ex.getMessage());
+                }
+                } catch (GestorGeneralEstadoException ex) {
+                    logger.error("Ha fallado al intentar detener el proceso");
+                    logger.error(ex.getMessage());
+                    logManager.addLog("Ha fallado al intentar detener el proceso");
+                    logManager.addLog(ex.getMessage());
+                }
+            }
+        }
+    }
+
+    public void detener() throws GestorGeneralEstadoException {
+        logger.info("[GestorGeneralEstado.detener]");
+        logManager.addLog("[GestorGeneralEstado.detener]");
+        for (GestorComunicacionRecibir gcr : receivers) {
+            gcr.detenerConexion();
+            gcr.removeEventListener(this);
+        }
+        for (Proceso proceso : procesos) {
+            liberarRecursos(proceso,proceso.getEstadoProceso());
+        }
+        procesos.clear();
+        logger.info("Deteniendo el timer");
+        logManager.addLog("Deteniendo el timer");
+        timerRemontaje.stop();
+        isIniciado = false;
+    }
+
+    public List<Proceso> getProcesos(){
+        return procesos;
+    }
+
+    private List<Proceso> cargarProcesos() {
+        logger.info("[GestorGeneralEstado.cargarProcesos]");
+        logManager.addLog("[GestorGeneralEstado.cargarProcesos]");
+        ProcesoFilter filter = new ProcesoFilter();
+        filter.setEstadoProceso(EstadoProceso.INICIADO);
+        filter.setFecha(new Date());
+        logger.info("Buscando los procesos iniciados en la Base de Datos");
+        logManager.addLog("Buscando los procesos iniciados en la Base de Datos");
+        List<Proceso> procesosEncontrados = procesoDao.findByFilter(filter);
+        
+        return procesosEncontrados;
+    }
+
+    private void iniciarProceso(Proceso proceso) throws GestorGeneralEstadoException {
+        logger.info("[GestorGeneralEstado.iniciarProceso]");
+        logManager.addLog("[GestorGeneralEstado.iniciarProceso]");
+        GestorComunicacionRecibir gcr = new GestorComunicacionRecibir(proceso);
+        gcr.addEventListener(this);
+        receivers.add(gcr);
+    }
+
+    public synchronized void actionPerformed(ViniControlEvent e) {
+        
+        logger.info("[GestorGeneralEstado.actionPerformed]");
+        logManager.addLog("[GestorGeneralEstado.actionPerformed]");
+
+        if( e instanceof NuevoEstadoTanqueEvent ){
+            NuevoEstadoTanqueEvent event = (NuevoEstadoTanqueEvent) e;
+            EstadoTanque estadoTanque = event.getEstadoTanque();
+            Proceso proceso = event.getProceso();
+            //Verifico si el estado tanque es igual al ultimo que agregue
+            if ( proceso.addEstadoTanque(estadoTanque) ){
+                proceso.setEstadoTanque(estadoTanque);
+                try{
+                    controladorPrediccionTendencia.actualizar(estadoTanque.getTemperatura(), proceso);
+                } catch (PrediccionException ex) {
+                    logger.error("Fallo al actualizar la predicción");
+                    logManager.addLog("Fallo al actualizar el predicción");
+                    logger.error("No se pudo agregar la predicción");
+                    logManager.addLog("No se pudo agregar la predicción");
+                    logger.error(ex.getMessage());
+                    logManager.addLog(ex.getMessage());
+                }
+            }else{
+                //si es igual al ultimo no lo agrego
+                estadoTanque = proceso.getEstadoTanque();
+            }
+            verificarAlarma(estadoTanque);
+            try {
+                procesoDao.update(proceso);
+            } catch (PersistException ex) {
+                logger.error("Fallo al actualizar el proceso");
+                logManager.addLog("Fallo al actualizar el proceso");
+                logger.error("No se pudo agregar el estado del tanque");
+                logManager.addLog("No se pudo agregar el estado del tanque");
+                logger.error(ex.getMessage());
+                logManager.addLog(ex.getMessage());
+            }
+
+            dispatchEvent(event);
+        }
+    }
+
+    public void validarInicio(Proceso proceso) throws GestorGeneralEstadoException {
+        logger.info("[GestorGeneralEstado.validarInicio]");
+        logManager.addLog("[GestorGeneralEstado.validarInicio]");
+        ProcesoFilter filter = new ProcesoFilter();
+        filter.setEstadoProceso(EstadoProceso.INICIADO);
+        filter.setTanque(proceso.getTanque());
+        List<Proceso> procesosIniciados = procesoDao.findByFilter(filter);
+        if (!procesosIniciados.isEmpty()) {
+            logger.info("Ya hay un tanque asignado a un proceso que esta iniciado");
+            logManager.addLog("Ya hay un tanque asignado a un proceso que esta iniciado");
+            throw new GestorGeneralEstadoException("Ya hay un tanque asignado a un proceso que esta iniciado");
+        } else {
+            iniciarProceso(proceso);
+            procesos.add(proceso);
+            dispatchEvent(new AgregarProcesoEvent(this, proceso));
+        }
+    }
+
+    public void liberarRecursos(Proceso proceso, EstadoProceso estadoProceso) throws GestorGeneralEstadoException {
+        logger.info("[GestorGeneralEstado.liberarRecursos]");
+        logManager.addLog("[GestorGeneralEstado.liberarRecursos]");
+        for (GestorComunicacionRecibir gcr : receivers) {
+            if (gcr.getProceso().equals(proceso)) {
+                receivers.remove(gcr);
+                gcr.removeEventListener(this);
+                proceso.setEstadoProceso(estadoProceso);
+                break;
+            }
+        }
+        dispatchEvent(new RemoverProcesoEvent(this, proceso));
+    }
+
+    public void enviarComandoBajarTemperatura(Proceso proceso) throws GestorGeneralEstadoException, ComunicacionException {
+        logger.info("[GestorGeneralEstado.enviarComandoBajarTemperatura]");
+        logManager.addLog("[GestorGeneralEstado.enviarComandoBajarTemperatura]");
+        ConfiguracionConexion cip = proceso.getConfiguracionConexion();
+        if (cip == null) {
+            logger.error("No hay ninguna conexión activa para el tanque del proceso");
+            logManager.addLog("No hay ninguna conexión activa para el tanque del proceso");
+            logger.error("Tanque: " + proceso.getTanque());
+            logManager.addLog("Tanque: " + proceso.getTanque());
+            logger.error("Proceso: " + proceso);
+            logManager.addLog("Proceso: " + proceso);
+            throw new GestorGeneralEstadoException("No hay ninguna conexión activa para el tanque del proceso");
+        }
+        IComandoTanque comando = FactoriaComandos.getInstance().getComando(FactoriaComandos.COMANDO_BAJAR_TEMPERATURA, cip);
+        comando.setTanque(proceso.getTanque(), proceso.getEstadoTanque());
+        comando.execute();
+    }
+
+    public void enviarComandoRemontaje(Proceso proceso) throws GestorGeneralEstadoException, ComunicacionException {
+        logger.info("[GestorGeneralEstado.enviarComandoRemontaje]");
+        logManager.addLog("[GestorGeneralEstado.enviarComandoRemontaje]");
+        ConfiguracionConexion cip = proceso.getConfiguracionConexion();
+        if (cip == null) {
+            logger.error("No hay ninguna conexión activa para el tanque del proceso");
+            logManager.addLog("No hay ninguna conexión activa para el tanque del proceso");
+            logger.error("Tanque: " + proceso.getTanque());
+            logManager.addLog("Tanque: " + proceso.getTanque());
+            logger.error("Proceso: " + proceso);
+            logManager.addLog("Proceso: " + proceso);
+            throw new GestorGeneralEstadoException("No hay ninguna conexión activa para el tanque del proceso");
+        }
+        IComandoTanque comando = FactoriaComandos.getInstance().getComando(FactoriaComandos.COMANDO_REMONTAJE, cip);
+        comando.setTanque(proceso.getTanque(), proceso.getEstadoTanque());
+        comando.execute();
+        dispatchEvent(new NuevoComandoEvent(this, "Ejecutando remontaje",proceso));
+    }
+
+    public void enviarComandoFinRemontaje(Proceso proceso) throws GestorGeneralEstadoException, ComunicacionException {
+        logger.info("[GestorGeneralEstado.enviarComandoFinRemontaje]");
+        logManager.addLog("[GestorGeneralEstado.enviarComandoFinRemontaje]");
+        ConfiguracionConexion cip = proceso.getConfiguracionConexion();
+        if (cip == null) {
+            logger.error("No hay ninguna conexión activa para el tanque del proceso");
+            logManager.addLog("No hay ninguna conexión activa para el tanque del proceso");
+            logger.error("Tanque: " + proceso.getTanque());
+            logManager.addLog("Tanque: " + proceso.getTanque());
+            logger.error("Proceso: " + proceso);
+            logManager.addLog("Proceso: " + proceso);
+            throw new GestorGeneralEstadoException("No hay ninguna conexión activa para el tanque del proceso");
+        }
+        IComandoTanque comando = FactoriaComandos.getInstance().getComando(FactoriaComandos.COMANDO_FIN_REMONTAJE, cip);
+        comando.setTanque(proceso.getTanque(), proceso.getEstadoTanque());
+        comando.execute();
+        dispatchEvent(new NuevoComandoEvent(this, "Deteniendo el remontaje",proceso));
+    }
+
+    private void verificarAlarma(EstadoTanque estadoTanque) {
+        logger.info("[GestorGeneralEstado.verificarAlarma]");
+        logManager.addLog("[GestorGeneralEstado.verificarAlarma]");
+        logger.info("Estado del Tanque: " + estadoTanque);
+        logManager.addLog("Estado del Tanque: " + estadoTanque);
+        Proceso proceso = estadoTanque.getProceso();
+
+        if( proceso == null ){
+            logger.fatal("No se pueden verificar las alarmas el proceso es nulo");
+            logManager.addLog("No se pueden verificar las alarmas el proceso es nulo");
+            return;
+        }
+
+        boolean isAlarmaNivelAzucar = proceso.verificarAlarmaNivelAzucar();
+        boolean isAlarmaNivel = proceso.verificarAlarmaNivel();
+        boolean isAlarmaTemperaturaMaxima = proceso.verificarAlarmaTemperaturaMaxima();
+        boolean isAlarmaTemperaturaMinima = proceso.verificarAlarmaTemperaturaMinima();
+        boolean isAlarmaTemperaturaTolerancia = proceso.verificarAlarmaTemperaturaTolerancia();
+
+        try{
+            double temperaturaPredecida = controladorPrediccionTendencia.predecir(proceso, MINUTOS_PREDECIR);
+            boolean isAlarmaTemperaturaPrediccion = proceso.verificarAlarmaTemperaturaPrediccion(temperaturaPredecida);
+
+            if (!isAlarmaTemperaturaMaxima && isAlarmaTemperaturaPrediccion) {
+                try {
+                    enviarComandoBajarTemperatura(proceso);
+                    dispatchEvent(new NuevoComandoEvent(this, "Ejecutando bajar temperatura por predicción",proceso));
+                    logger.info("Se ha predecido que la temperatura va a subir hasta pasar el límite establecido como alarma");
+                    logManager.addLog("Se ha predecido que la temperatura va a subir hasta pasar el límite establecido como alarma");
+                    try {
+                        procesoDao.update(proceso);
+                    } catch (PersistException ex) {
+                        ex.printStackTrace();
+                        logger.error("Fallo al actualizar el proceso");
+                        logManager.addLog("Fallo al actualizar el proceso");
+                        logger.error("No se pudo agregar la alarma de temperatura");
+                        logManager.addLog("No se pudo agregar la alarma de temperatura");
+                        logger.error(ex.getMessage());
+                        logManager.addLog(ex.getMessage());
+                    }
+                } catch (GestorGeneralEstadoException ex) {
+                    logger.error("Error al bajar la temperatura. ");
+                    logManager.addLog("Error al bajar la temperatura. ");
+                    logger.error(ex.getMessage());
+                    logManager.addLog(ex.getMessage());
+                } catch (ComunicacionException ex) {
+                    logger.error("Error al bajar la temperatura. ");
+                    logManager.addLog("Error al bajar la temperatura. ");
+                    logger.error(ex.getMessage());
+                    logManager.addLog(ex.getMessage());
+                }
+            }
+            if (isAlarmaTemperaturaMinima) {
+                AlarmaTemperatura alarmaTemperatura = new AlarmaTemperatura();
+                alarmaTemperatura.setMaxima(false);
+                alarmaTemperatura.setTemperatura(estadoTanque.getTemperatura());
+                NuevaAlarmaEvent alarmaTemperaturaEvent = new NuevaAlarmaEvent(this, alarmaTemperatura);
+                
+                logger.warn("Alarma Temperatura: " + alarmaTemperatura);
+                logManager.addLog("Alarma Temperatura: " + alarmaTemperatura);
+                proceso.addAlarmaTemperatura(alarmaTemperatura);
+                dispatchEvent(alarmaTemperaturaEvent);
+                try {
+                    procesoDao.update(proceso);
+                } catch (PersistException ex) {
+                    ex.printStackTrace();
+                    logger.error("Fallo al actualizar el proceso");
+                    logManager.addLog("Fallo al actualizar el proceso");
+                    logger.error("No se pudo agregar la alarma de temperatura");
+                    logManager.addLog("No se pudo agregar la alarma de temperatura");
+                    logger.error(ex.getMessage());
+                    logManager.addLog(ex.getMessage());
+                }
+            }
+        }catch(PrediccionException ex){
+            logger.error("Ha ocurrido un error al intentar verificar la predicción de la alarma");
+            logManager.addLog("Ha ocurrido un error al intentar verificar la predicción de la alarma");
+            logger.error(ex.getMessage());
+            logManager.addLog(ex.getMessage());
+        }
+
+        if (isAlarmaNivelAzucar) {
+            AlarmaNivelAzucar alarmaNivelAzucar = new AlarmaNivelAzucar();
+            alarmaNivelAzucar.setNivelAzucar(estadoTanque.getNivelAzucar());
+            NuevaAlarmaEvent alarmaNivelAzucarEvent = new NuevaAlarmaEvent(this, alarmaNivelAzucar);
+            logger.warn("Alarma Nivel Azucar: " + alarmaNivelAzucar);
+            logManager.addLog("Alarma Nivel Azucar: " + alarmaNivelAzucar);
+            proceso.addAlarmaNivelAzucar(alarmaNivelAzucar);
+            dispatchEvent(alarmaNivelAzucarEvent);
+            try {
+                procesoDao.update(proceso);
+            } catch (PersistException ex) {
+                logger.error("Fallo al actualizar el proceso");
+                logManager.addLog("Fallo al actualizar el proceso");
+                logger.error("No se pudo agregar la alarma del nivel de azucar");
+                logManager.addLog("No se pudo agregar la alarma del nivel de azucar");
+                logger.error(ex.getMessage());
+                logManager.addLog(ex.getMessage());
+            }
+        }
+        if (isAlarmaNivel) {
+            AlarmaNivelCapacidad alarmaNivelCapacidad = new AlarmaNivelCapacidad();
+            alarmaNivelCapacidad.setNivelCapacidad(estadoTanque.getNivelContenido());
+            NuevaAlarmaEvent alarmaNivelCapacidadEvent = new NuevaAlarmaEvent(this, alarmaNivelCapacidad);
+            logger.warn("Alarma Nivel Capacidad: " + alarmaNivelCapacidad);
+            logManager.addLog("Alarma Nivel Capacidad: " + alarmaNivelCapacidad);
+            proceso.addAlarmaNivelCapacidad(alarmaNivelCapacidad);
+            dispatchEvent(alarmaNivelCapacidadEvent);
+            try {
+                procesoDao.update(proceso);
+            } catch (PersistException ex) {
+                logger.error("Fallo al actualizar el proceso");
+                logManager.addLog("Fallo al actualizar el proceso");
+                logger.error("No se pudo agregar la alarma del nivel de capacidad");
+                logManager.addLog("No se pudo agregar la alarma del nivel de capacidad");
+                logger.error(ex.getMessage());
+                logManager.addLog(ex.getMessage());
+            }
+        }
+        if (isAlarmaTemperaturaMaxima) {
+            AlarmaTemperatura alarmaTemperatura = new AlarmaTemperatura();
+            alarmaTemperatura.setMaxima(true);
+            alarmaTemperatura.setTemperatura(estadoTanque.getTemperatura());
+            NuevaAlarmaEvent alarmaTemperaturaEvent = new NuevaAlarmaEvent(this, alarmaTemperatura);
+            try {
+                enviarComandoBajarTemperatura(proceso);
+                dispatchEvent(new NuevoComandoEvent(this, "Ejecutando bajar temperatura",proceso));
+                logger.warn("Alarma Temperatura: " + alarmaTemperatura);
+                logManager.addLog("Alarma Temperatura: " + alarmaTemperatura);
+                proceso.addAlarmaTemperatura(alarmaTemperatura);
+                dispatchEvent(alarmaTemperaturaEvent);
+                try {
+                    procesoDao.update(proceso);
+                } catch (PersistException ex) {
+                    ex.printStackTrace();
+                    logger.error("Fallo al actualizar el proceso");
+                    logManager.addLog("Fallo al actualizar el proceso");
+                    logger.error("No se pudo agregar la alarma de temperatura");
+                    logManager.addLog("No se pudo agregar la alarma de temperatura");
+                    logger.error(ex.getMessage());
+                    logManager.addLog(ex.getMessage());
+                }
+            } catch (GestorGeneralEstadoException ex) {
+                logger.error("Error al bajar la temperatura. ");
+                logManager.addLog("Error al bajar la temperatura. ");
+                logger.error(ex.getMessage());
+                logManager.addLog(ex.getMessage());
+            } catch (ComunicacionException ex) {
+                logger.error("Error al bajar la temperatura. ");
+                logManager.addLog("Error al bajar la temperatura. ");
+                logger.error(ex.getMessage());
+                logManager.addLog(ex.getMessage());
+            }
+        }
+        if (!isAlarmaTemperaturaMaxima && isAlarmaTemperaturaTolerancia) {
+            try {
+                enviarComandoBajarTemperatura(proceso);
+                dispatchEvent(new NuevoComandoEvent(this, "Ejecutando bajar temperatura por tolerancia",proceso));
+            } catch (GestorGeneralEstadoException ex) {
+                logger.error("Error al bajar la temperatura. ");
+                logManager.addLog("Error al bajar la temperatura. ");
+                logger.error(ex.getMessage());
+                logManager.addLog(ex.getMessage());
+            } catch (ComunicacionException ex) {
+                logger.error("Error al bajar la temperatura. ");
+                logManager.addLog("Error al bajar la temperatura. ");
+                logger.error(ex.getMessage());
+                logManager.addLog(ex.getMessage());
+            }
+        }
+    }
+
+    private void verificarRemontaje() {
+        logger.info("[GestorGeneralEstado.verificarRemontaje]");
+        logManager.addLog("[GestorGeneralEstado.verificarRemontaje]");
+        
+        for (Proceso proceso : procesos) {
+            verificarRemontaje(proceso);
+        }
+    }
+
+    private void verificarRemontaje(Proceso proceso) {
+        logger.info("[GestorGeneralEstado.verificarRemontaje]");
+        logManager.addLog("[GestorGeneralEstado.verificarRemontaje]");
+
+        if(!proceso.getEstadoProceso().equals(EstadoProceso.INICIADO)) return;
+
+        ReglaControl reglaControl = proceso.getReglaControl();
+        if (reglaControl == null) {
+            return;
+        }
+        ReglaControlRemontaje rcr = reglaControl.getReglaControlRemontaje();
+        try {
+            if (rcr != null && rcr.isNecesarioRemontar(proceso.getFechaInicio())) {
+                if (!rcr.isRemontando()) {
+                    logger.info("No se está remontando, se debe remontar");
+                    logManager.addLog("No se está remontando, se debe remontar");
+                    enviarComandoRemontaje(proceso);
+                    AlarmaRemontaje alarmaRemontaje = new AlarmaRemontaje();
+                    alarmaRemontaje.setInicio(true);
+                    NuevaAlarmaEvent alarmaRemontajeEvent = new NuevaAlarmaEvent(this, alarmaRemontaje);
+                    logger.info("Alarma Remontaje: " + alarmaRemontaje);
+                    logManager.addLog("Alarma Remontaje: " + alarmaRemontaje);
+                    dispatchEvent(alarmaRemontajeEvent);
+                    proceso.addAlarmaRemontaje(alarmaRemontaje);
+                    try {
+                        procesoDao.update(proceso);
+                    } catch (PersistException ex) {
+                        logger.error("Fallo al actualizar el proceso");
+                        logManager.addLog("Fallo al actualizar el proceso");
+                        logger.error("No se pudo agregar la alarma del remontaje");
+                        logManager.addLog("No se pudo agregar la alarma del remontaje");
+                        logger.error(ex.getMessage());
+                        logManager.addLog(ex.getMessage());
+                    }
+                }
+            } else {
+                if (rcr.isRemontando()) {
+                    logger.info("Se está remontando, no se debe remontar");
+                    logManager.addLog("Se está remontando, no se debe remontar");
+                    enviarComandoFinRemontaje(proceso);
+                    AlarmaRemontaje alarmaRemontaje = new AlarmaRemontaje();
+                    alarmaRemontaje.setInicio(false);
+                    NuevaAlarmaEvent alarmaRemontajeEvent = new NuevaAlarmaEvent(this, alarmaRemontaje);
+                    dispatchEvent(alarmaRemontajeEvent);
+                    logger.info("Alarma Remontaje: " + alarmaRemontaje);
+                    logManager.addLog("Alarma Remontaje: " + alarmaRemontaje);
+                    proceso.addAlarmaRemontaje(alarmaRemontaje);
+                    try {
+                        procesoDao.update(proceso);
+                    } catch (PersistException ex) {
+                        logger.error("Fallo al actualizar el proceso");
+                        logManager.addLog("Fallo al actualizar el proceso");
+                        logger.error("No se pudo agregar la alarma del nivel del remontaje");
+                        logManager.addLog("No se pudo agregar la alarma del nivel del remontaje");
+                        logger.error(ex.getMessage());
+                        logManager.addLog(ex.getMessage());
+                    }
+                }
+            }
+        } catch (GestorGeneralEstadoException ex) {
+            logger.error("Ha fallado la verificación del remontaje");
+            logManager.addLog("Ha fallado la verificación del remontaje");
+            logger.error(ex.getMessage());
+            logManager.addLog(ex.getMessage());
+        } catch (ComunicacionException ex) {
+            logger.error("Ha fallado la verificación del remontaje");
+            logManager.addLog("Ha fallado la verificación del remontaje");
+            logger.error(ex.getMessage());
+            logManager.addLog(ex.getMessage());
+        }
+    }
+}

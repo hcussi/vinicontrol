@@ -1,0 +1,101 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package edu.utn.frm.action;
+
+import edu.utn.frm.entities.usuario.Privilegio;
+import edu.utn.frm.entities.usuario.Rol;
+import edu.utn.frm.entities.usuario.Usuario;
+
+/**
+ *
+ * @author Proyecto
+ */
+public class LoginControlador {
+
+    private static LoginControlador instance;
+    private static final String ROOT = "superusuario";
+    private Usuario usuario;
+
+    private boolean accesoReglaControl;
+    private boolean accesoTanque;
+    private boolean accesoProducto;
+    private boolean accesoConexion;
+    private boolean accesoUsuario;
+    private boolean accesoConfiguracionSistema;
+
+    private LoginControlador(){
+    }
+
+    public static LoginControlador getInstance(){
+        if( instance == null ){
+            instance = new LoginControlador();
+        }
+        return instance;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public boolean isSuperUsuario(){
+
+        return usuario.getNombre().equals(ROOT);
+    }
+
+    public boolean isAccesoReglaControl(){
+        return accesoReglaControl;
+    }
+
+    public boolean isAccesoConexion(){
+        return accesoConexion;
+    }
+
+    public boolean isAccesoProducto(){
+        return accesoProducto;
+    }
+
+    public boolean isAccesoTanque(){
+        return accesoTanque;
+    }
+
+    public boolean isAccesoUsuario(){
+        return accesoUsuario;
+    }
+
+    public boolean isAccesoConfiguracionSistema(){
+        return accesoConfiguracionSistema;
+    }
+
+    public void validarAcceso(){
+        if( !isSuperUsuario() ){
+            for( Rol rol : usuario.getRoles() ){
+                for( Privilegio privilegio : rol.getPrivilegios() ){
+                    switch( privilegio.getTipoPrivilegio() ){
+                        case CONEXION:
+                            accesoConexion = true;
+                        case PRODUCTO:
+                            accesoProducto = true;
+                        case REGLA_CONTROL:
+                            accesoReglaControl = true;
+                        case TANQUE:
+                            accesoTanque = true;
+                        case USUARIO:
+                            accesoUsuario = true;
+                        case SISTEMA:
+                            accesoConfiguracionSistema = true;
+                    }
+                }
+            }
+        }else{
+            accesoConexion = accesoProducto = accesoReglaControl = accesoTanque = 
+                    accesoUsuario = accesoConfiguracionSistema =true;
+        }
+    }
+}

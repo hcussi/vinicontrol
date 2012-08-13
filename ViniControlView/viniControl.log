@@ -1,0 +1,855 @@
+﻿10-11-2009 10:11:48 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 10:11:54 [edu.utn.frm.action.GenericAbm] INFO  - Fin de la configuración de hibernate
+10-11-2009 10:12:17 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 10:12:43 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 10:12:48 [edu.utn.frm.action.GenericAbm] INFO  - Fin de la configuración de hibernate
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciar]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.cargarProcesos]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Buscando los procesos iniciados en la Base de Datos
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Iniciando el timer para controlar los remontajes
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:12:52 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Se han iniciado los procesos
+10-11-2009 10:13:22 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:13:22 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:13:22 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:13:22 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:13:22 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:27:09 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 09:27:22 [edu.utn.frm.action.GenericAbm] INFO  - Fin de la configuración de hibernate
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciar]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.cargarProcesos]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Buscando los procesos iniciados en la Base de Datos
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Iniciando el timer para controlar los remontajes
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:27:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Se han iniciado los procesos
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:27:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:27:57 Estado: Iniciar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:27:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:27:57 Estado: Iniciar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:27:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:27:57 Estado: Iniciar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:27:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:27:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:27:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:27:57 Estado: Iniciar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:28:27 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:28:27 Estado: Iniciar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:28:27 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:28:27 Estado: Iniciar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:28:27 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:28:27 Estado: Iniciar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:28:27 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:28:27 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:28:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:28:27 Estado: Iniciar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:28:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:28:57 Estado: Iniciar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:28:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:28:57 Estado: Iniciar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:28:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:28:57 Estado: Iniciar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:28:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:28:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:28:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:28:57 Estado: Iniciar
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:29:27 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:29:27 Estado: Iniciar
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:29:27 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:29:27 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:29:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:29:27 Estado: Iniciar
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:29:28 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:29:28 Estado: Iniciar
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:29:28 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:29:28 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:29:28 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:29:28 Estado: Iniciar
+10-11-2009 09:29:41 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.actionPerformed]
+10-11-2009 09:29:41 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.procesarPaqueteComunicacion]
+10-11-2009 09:29:41 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - [GestorComunicacionArmar.armarEstadoTanque]
+10-11-2009 09:29:41 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando estado del tanque
+10-11-2009 09:29:42 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 09:29:42 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 09:29:42 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:29:42 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:29:42 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:29:47 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.actionPerformed]
+10-11-2009 09:29:47 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.procesarPaqueteComunicacion]
+10-11-2009 09:29:47 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - [GestorComunicacionArmar.armarEstadoTanque]
+10-11-2009 09:29:47 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando estado del tanque
+10-11-2009 09:29:48 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 09:29:48 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 09:29:48 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:29:48 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:29:48 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:29:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:29:57 Estado: Iniciar
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:29:57 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:29:57 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:29:57 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:29:57 Estado: Iniciar
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:29:58 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:29:58 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:29:58 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:29:58 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:29:58 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:29:58 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:29:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:29:58 Estado: Iniciar
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - No se está remontando, se debe remontar
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.enviarComandoRemontaje]
+10-11-2009 09:29:59 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.execute]
+10-11-2009 09:29:59 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.getEstrategia]
+10-11-2009 09:29:59 [edu.utn.frm.action.operacion.Comando] INFO  - Creando conexión UDP
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:29:59 [edu.utn.frm.action.operacion.Comando] INFO  - [Comando.armarPaqueteComunicacion]
+10-11-2009 09:29:59 [edu.utn.frm.action.operacion.Comando] INFO  - Armando el paquete de comunicación
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando paquete de comunicación para enviar
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.enviarPaqueteComunicacion]
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha creado el socket para la comunicación
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha enviado el paquete exitosamente
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [Tue Nov 10 09:29:59 GYT 2009] Enviando: idComando: 2
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Se ha cerrado la conexión exitosamente
+10-11-2009 09:29:59 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Alarma Remontaje: Fecha: 10/11/2009 Hora: 09:29:59 Estado: Iniciar
+10-11-2009 09:30:25 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.actionPerformed]
+10-11-2009 09:30:25 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.procesarPaqueteComunicacion]
+10-11-2009 09:30:25 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - [GestorComunicacionArmar.armarEstadoTanque]
+10-11-2009 09:30:25 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando estado del tanque
+10-11-2009 09:30:25 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 09:30:25 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 09:30:25 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:30:25 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:30:25 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:30:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:30:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:30:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:30:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:30:27 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:30:40 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.actionPerformed]
+10-11-2009 09:30:40 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.procesarPaqueteComunicacion]
+10-11-2009 09:30:40 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - [GestorComunicacionArmar.armarEstadoTanque]
+10-11-2009 09:30:40 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar] INFO  - Armando estado del tanque
+10-11-2009 09:30:40 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 09:30:40 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 09:30:40 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:30:40 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:30:40 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:30:49 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.detener]
+10-11-2009 09:30:49 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 09:30:49 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 09:30:49 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 09:30:50 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Deteniendo el timer
+10-11-2009 09:55:44 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 09:55:50 [edu.utn.frm.action.GenericAbm] INFO  - Fin de la configuración de hibernate
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciar]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.cargarProcesos]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Buscando los procesos iniciados en la Base de Datos
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Iniciando el timer para controlar los remontajes
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 09:57:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Se han iniciado los procesos
+10-11-2009 09:57:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:57:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:57:40 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:57:40 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:57:40 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:58:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 09:59:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:00:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:01:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:01:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:01:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:01:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:01:09 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.detener]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:01:17 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Deteniendo el timer
+10-11-2009 10:06:59 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 10:07:05 [edu.utn.frm.action.GenericAbm] INFO  - Fin de la configuración de hibernate
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciar]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.cargarProcesos]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Buscando los procesos iniciados en la Base de Datos
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Iniciando el timer para controlar los remontajes
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:07:08 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Se han iniciado los procesos
+10-11-2009 10:14:45 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 10:14:50 [edu.utn.frm.action.GenericAbm] INFO  - Fin de la configuración de hibernate
+10-11-2009 10:14:54 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciar]
+10-11-2009 10:14:54 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.cargarProcesos]
+10-11-2009 10:14:54 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Buscando los procesos iniciados en la Base de Datos
+10-11-2009 10:14:54 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:14:54 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Iniciando el timer para controlar los remontajes
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:14:55 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Se han iniciado los procesos
+10-11-2009 10:16:29 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 10:16:34 [edu.utn.frm.action.GenericAbm] INFO  - Fin de la configuración de hibernate
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciar]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.cargarProcesos]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Buscando los procesos iniciados en la Base de Datos
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Iniciando el timer para controlar los remontajes
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:16:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Se han iniciado los procesos
+10-11-2009 10:17:29 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 10:17:35 [edu.utn.frm.action.GenericAbm] INFO  - Fin de la configuración de hibernate
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciar]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.cargarProcesos]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Buscando los procesos iniciados en la Base de Datos
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:17:38 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:17:39 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:17:39 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:17:39 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:17:39 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:17:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Iniciando el timer para controlar los remontajes
+10-11-2009 10:17:39 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:17:39 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:17:39 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Se han iniciado los procesos
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.detener]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:17:58 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Deteniendo el timer
+10-11-2009 10:21:01 [edu.utn.frm.action.GenericAbm] INFO  - Se esta inicializando la configuración de hibernate
+10-11-2009 10:21:06 [edu.utn.frm.action.GenericAbm] INFO  - Fin de la configuración de hibernate
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciar]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.cargarProcesos]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Buscando los procesos iniciados en la Base de Datos
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.iniciarProceso]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.recibirPaquete]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.getEstrategiaComunicacion]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.setConfiguracionConexion]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - La conexión se ha seteado exitosamente
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.recibirPaquete]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Iniciando el timer para controlar los remontajes
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.doInBackground]
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Preparado para recibir tramas UDP en background
+10-11-2009 10:21:10 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Se han iniciado los procesos
+10-11-2009 10:21:40 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:21:40 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:21:40 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:21:40 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:21:40 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.verificarRemontaje]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.detener]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionRecibir] INFO  - [GestorComunicacionRecibir.detenerConexion]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [EstrategiaComunicacionUDP.detenerConexion]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Deteniendo la conexión y liberando recursos
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - [SwingWorker.done]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.estrategia.EstrategiaComunicacionUDP] INFO  - Trama UDP Recibida. Preparando para recibir nuevamente
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - [GestorGeneralEstado.liberarRecursos]
+10-11-2009 10:21:46 [edu.utn.frm.action.comunicacion.GestorGeneralEstado] INFO  - Deteniendo el timer

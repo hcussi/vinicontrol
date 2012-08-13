@@ -1,0 +1,54 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package edu.utn.frm.action.log;
+
+import edu.utn.frm.entities.utils.DateOperations;
+import java.util.Date;
+
+/**
+ *
+ * @author Proyecto
+ */
+public class LogManager {
+
+    private static LogManager instance;
+    private IMessageLogger logger;
+    private StringBuffer buffer;
+    
+    private LogManager(){
+        buffer = new StringBuffer();
+    }
+
+    public static LogManager getInstance(){
+        if( instance == null ){
+            instance = new LogManager();
+        }
+        return instance;
+    }
+
+    public StringBuffer getMessageOriginal(){
+        return buffer;
+    }
+
+    public void limpiar(){
+        buffer = new StringBuffer();
+    }
+
+    public String setLogger(IMessageLogger logger) {
+        this.logger = logger;
+        return buffer.toString();
+    }
+
+    public synchronized void addLog(String messageToAdd){
+        Date fecha = new Date();
+        String message = "["+ DateOperations.toDateString(fecha, "/", ":") + "] " + messageToAdd + " \n";
+        if(logger != null) {
+            logger.setMessage(message);
+        }
+        buffer.append( message );
+    }
+
+}

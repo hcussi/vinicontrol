@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/comunicacion
+END
+ConexionIPDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/comunicacion/ConexionIPDao.java
+END
+ConfiguracionConexionFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/comunicacion/ConfiguracionConexionFilter.java
+END
+ConexionSerieFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/comunicacion/ConexionSerieFilter.java
+END
+ConexionIPFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/comunicacion/ConexionIPFilter.java
+END
+ConfiguracionConexionDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/comunicacion/ConfiguracionConexionDao.java
+END
+ConexionSerieDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/comunicacion/ConexionSerieDao.java
+END

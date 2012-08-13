@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/utils
+END
+Paginator.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/utils/Paginator.java
+END
+HelperValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/utils/HelperValidator.java
+END
+ScrollerType.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/utils/ScrollerType.java
+END
+JPAUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/generic/utils/JPAUtil.java
+END

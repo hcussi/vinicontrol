@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+    <queryString language="SQL">
+		<![CDATA[SELECT
+     regla_control_nivel.`nivelMinimoAzucar` AS regla_control_nivel_nivelMinimoAzucar,
+     regla_control_nivel.`nivelMaximoCapacidad` AS regla_control_nivel_nivelMaximoCapacidad,
+     regla_control_nivel.`descripcion` AS regla_control_nivel_descripcion,
+     regla_control_nivel.`codigo` AS regla_control_nivel_codigo
+FROM
+     `regla_control_nivel` regla_control_nivel]]>
+    </queryString>
+    <field name="regla_control_nivel_nivelMinimoAzucar" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <field name="regla_control_nivel_nivelMaximoCapacidad" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <field name="regla_control_nivel_descripcion" class="java.lang.String">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <field name="regla_control_nivel_codigo" class="java.lang.String">
+        <fieldDescription><![CDATA[]]>
+        </fieldDescription>
+    </field>
+    <background>
+        <band/>
+    </background>
+    <title>
+        <band height="81">
+            <frame>
+                <reportElement mode="Opaque" x="-20" y="-20" width="595" height="101" backcolor="#006699"/>
+                <staticText>
+                    <reportElement x="20" y="20" width="437" height="52" forecolor="#FFFFFF"/>
+                    <textElement>
+                        <font size="34" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[Informe Control de Niveles]]>
+                    </text>
+                </staticText>
+                <staticText>
+                    <reportElement x="405" y="1" width="180" height="20" forecolor="#FFFFFF"/>
+                    <textElement textAlignment="Right">
+                        <font size="14" isBold="false"/>
+                    </textElement>
+                    <text><![CDATA[Bodega Morales]]>
+                    </text>
+                </staticText>
+            </frame>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="13"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="21">
+            <line>
+                <reportElement x="-20" y="20" width="595" height="1" forecolor="#666666"/>
+            </line>
+            <staticText>
+                <reportElement mode="Opaque" x="414" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Nivel Mínimo Azucar]]>
+                </text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="276" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Volumen Máximo]]>
+                </text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="139" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Descripción]]>
+                </text>
+            </staticText>
+            <staticText>
+                <reportElement mode="Opaque" x="1" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Center">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Código]]>
+                </text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="20">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"/>
+            </line>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="276" y="0" width="138" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{regla_control_nivel_nivelMaximoCapacidad}]]>
+                </textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="1" y="0" width="138" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{regla_control_nivel_codigo}]]>
+                </textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="414" y="0" width="138" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.Double"><![CDATA[$F{regla_control_nivel_nivelMinimoAzucar}]]>
+                </textFieldExpression>
+            </textField>
+            <textField isStretchWithOverflow="true">
+                <reportElement x="139" y="0" width="138" height="20"/>
+                <textElement textAlignment="Center">
+                    <font size="14"/>
+                </textElement>
+                <textFieldExpression class="java.lang.String"><![CDATA[$F{regla_control_nivel_descripcion}]]>
+                </textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band/>
+    </columnFooter>
+    <pageFooter>
+        <band height="17">
+            <textField>
+                <reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"/>
+                <textElement textAlignment="Right"/>
+                <textFieldExpression class="java.lang.String"><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]>
+                </textFieldExpression>
+            </textField>
+            <textField evaluationTime="Report">
+                <reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"/>
+                <textElement/>
+                <textFieldExpression class="java.lang.String"><![CDATA[" " + $V{PAGE_NUMBER}]]>
+                </textFieldExpression>
+            </textField>
+            <textField pattern="EEEEE dd MMMMM yyyy">
+                <reportElement x="0" y="4" width="100" height="13"/>
+                <textElement/>
+                <textFieldExpression class="java.util.Date"><![CDATA[new java.util.Date()]]>
+                </textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+    <summary>
+        <band/>
+    </summary>
+</jasperReport>

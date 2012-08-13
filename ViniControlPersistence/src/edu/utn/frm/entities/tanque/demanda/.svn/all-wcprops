@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/tanque/demanda
+END
+EstadoPrediccion.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/tanque/demanda/EstadoPrediccion.java
+END
+PrediccionTendenciaTemperatura.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/svn_vinicontrol/!svn/ver/94/trunk/ViniControlPersistence/src/edu/utn/frm/entities/tanque/demanda/PrediccionTendenciaTemperatura.java
+END
+EstadoPrediccionTendencia.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/svn_vinicontrol/!svn/ver/94/trunk/ViniControlPersistence/src/edu/utn/frm/entities/tanque/demanda/EstadoPrediccionTendencia.java
+END

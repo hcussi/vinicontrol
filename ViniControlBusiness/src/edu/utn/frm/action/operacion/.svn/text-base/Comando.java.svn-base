@@ -1,0 +1,77 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package edu.utn.frm.action.operacion;
+
+import edu.utn.frm.action.comunicacion.PaqueteComunicacion;
+import edu.utn.frm.action.comunicacion.estrategia.FactoriaEstrategia;
+import edu.utn.frm.action.comunicacion.estrategia.GestorComunicacionArmar;
+import edu.utn.frm.action.comunicacion.estrategia.IEstrategiaComunicacion;
+import edu.utn.frm.action.comunicacion.eventos.EventDispatcher;
+import edu.utn.frm.action.exception.ComunicacionException;
+import edu.utn.frm.entities.comunicacion.ConexionIP;
+import edu.utn.frm.entities.comunicacion.ConexionSerie;
+import edu.utn.frm.entities.comunicacion.ConfiguracionConexion;
+import edu.utn.frm.entities.comunicacion.TipoConexion;
+import edu.utn.frm.entities.tanque.EstadoTanque;
+import edu.utn.frm.entities.tanque.Tanque;
+import org.apache.log4j.Logger;
+
+/**
+ *
+ * @author Proyecto
+ */
+public abstract class Comando extends EventDispatcher{
+
+    protected ConfiguracionConexion configuracionConexion;
+    protected Tanque tanque;
+    protected EstadoTanque estadoTanque;
+    private static Logger logger = Logger.getLogger(Comando.class);
+
+    public Comando(ConfiguracionConexion configuracionConexion){
+        this.configuracionConexion = configuracionConexion;
+    }
+
+    public void setTanque(Tanque tanque, EstadoTanque estadoTanque) {
+        this.tanque = tanque;
+        this.estadoTanque = estadoTanque;
+    }
+
+    private IEstrategiaComunicacion getEstrategia(){
+        logger.info("[Comando.getEstrategia]");
+        if( configuracionConexion instanceof ConexionIP ){
+            ConexionIP conexionIP = (ConexionIP)configuracionConexion;
+            if( conexionIP.getTipoConexion().equals(TipoConexion.TCP) ){
+                logger.info("Creando conexión TCP");
+                return FactoriaEstrategia.getInstance().getEstrategia(FactoriaEstrategia.ESTRATEGIA_TCP);
+            }else{
+                logger.info("Creando conexión UDP");
+                return FactoriaEstrategia.getInstance().getEstrategia(FactoriaEstrategia.ESTRATEGIA_UDP);
+            }
+        }else if(configuracionConexion instanceof ConexionSerie){
+            logger.info("Creando conexión Serie");
+            return FactoriaEstrategia.getInstance().getEstrategia(FactoriaEstrategia.ESTRATEGIA_RS232);
+        }else{
+            return null;
+        }
+    }
+
+    protected abstract int getComandoID();
+
+    public void execute() throws ComunicacionException{
+        logger.info("[Comando.execute]");
+        IEstrategiaComunicacion estrategia = getEstrategia();
+        estrategia.setConfiguracionConexion(configuracionConexion);
+        estrategia.enviarPaqueteComunicacion(armarPaqueteComunicacion());
+    }
+
+    protected PaqueteComunicacion armarPaqueteComunicacion() {
+        logger.info("[Comando.armarPaqueteComunicacion]");
+        logger.info("Armando el paquete de comunicación");
+        GestorComunicacionArmar gca = new GestorComunicacionArmar();
+        return gca.armarPaqueteEnviar( getComandoID());
+    }
+
+}

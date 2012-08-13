@@ -1,0 +1,27 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package edu.utn.frm.action.operacion;
+
+import edu.utn.frm.entities.comunicacion.ConfiguracionConexion;
+
+/**
+ *
+ * @author Proyecto
+ */
+public class ComandoRemontaje extends Comando implements IComandoTanque{
+
+    private static final int ID_COMANDO = 2;
+
+    public ComandoRemontaje(ConfiguracionConexion configuracionConexion){
+        super(configuracionConexion);
+    }
+
+    protected int getComandoID() {
+
+        return ID_COMANDO;
+    }
+
+}

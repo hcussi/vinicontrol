@@ -1,0 +1,122 @@
+/*
+ * ControladorPrediccionTendencia.java
+ *
+ * Created on 27 de noviembre de 2006, 21:37
+ *
+ * To change this template, choose Tools | Template Manager
+ * and open the template in the editor.
+ */
+package edu.utn.frm.action.demanda;
+
+import edu.utn.frm.action.LoginControlador;
+import edu.utn.frm.action.exception.PrediccionException;
+import edu.utn.frm.dao.demanda.estado.EstadoPrediccionTendenciaDao;
+import edu.utn.frm.entities.proceso.Proceso;
+import edu.utn.frm.entities.tanque.demanda.EstadoPrediccionTendencia;
+import edu.utn.frm.entities.tanque.demanda.PrediccionTendenciaTemperatura;
+import edu.utn.frm.entities.utils.Mat;
+
+/**
+ *
+ * @author Proyecto
+ */
+public class ControladorPrediccionTendencia {
+
+    private EstadoPrediccionTendenciaDao estadoPrediccionTendenciaDao;
+    private ControladorEstado controladorEstado;
+    private EstadoPrediccionTendencia estadoTendencia;
+    private PrediccionTendenciaTemperatura tendencia;
+
+    /**
+     * Creates una nueva instancia de ControladorPrediccionTendencia
+     */
+    public ControladorPrediccionTendencia() {
+        estadoPrediccionTendenciaDao = new EstadoPrediccionTendenciaDao(LoginControlador.getInstance().getUsuario());
+        controladorEstado = new ControladorEstado();
+    }
+
+    public void actualizar(double temperatura, Proceso proceso) throws PrediccionException {
+
+        controladorEstado.validarEstado(proceso.getTanque());
+        estadoTendencia = proceso.getTanque().getEstadoPrediccionTendencia();
+
+        int periodo = estadoTendencia.getLastTendencia();
+        periodo++;
+
+        //Si es el primer periodo que existe
+        tendencia = new PrediccionTendenciaTemperatura();
+        tendencia.setTemperaturaReal(temperatura);
+        tendencia.setPeriodo(periodo);
+        tendencia.setProceso(proceso);
+        estadoTendencia.setLastTendencia(periodo);
+        tendencia.setAlfa(estadoTendencia.getAlfaTendencia());
+        tendencia.setBeta(estadoTendencia.getBetaTendencia());
+        tendencia.setPromedioAnterior(calcularProm(tendencia, estadoTendencia.getPromTendencia(), estadoTendencia.getTenTendencia()));
+        tendencia.setTendenciaAnterior(calcularTendencia(tendencia, estadoTendencia.getPromTendencia(), estadoTendencia.getTenTendencia()));
+        estadoTendencia.setEditTendencia(false);
+
+        proceso.addPrediccionTendencia(tendencia);
+        
+        try {
+            estadoPrediccionTendenciaDao.update(estadoTendencia);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            throw new PrediccionException("Error al actualizar el estado tendencia. " + ex.getMessage());
+        }
+    }
+
+    /**
+     *Se buscan los datos para la prediccion del metodo de suavizamiento con tendendencia
+     */
+    public PrediccionTendenciaTemperatura buscar(Proceso proceso, int periodo) {
+
+        return proceso.getPrediccionesTendencia(periodo);
+    }
+
+    /**
+     *Se calcula el promedio para el periodo actual
+     */
+    public double calcularProm(PrediccionTendenciaTemperatura tendencia, double promedioAnterior, double tendenciaAnterior) {
+
+        double demandaReal = tendencia.getTemperaturaReal();
+        double alfa = tendencia.getAlfa();
+
+        double promedioActual = alfa * demandaReal + (1 - alfa) * (promedioAnterior + tendenciaAnterior);
+
+        return promedioActual;
+    }
+
+    /**
+     *Se calcula la tendencia para el periodo actual
+     */
+    public double calcularTendencia(PrediccionTendenciaTemperatura tendencia, double promedioAnterior, double tendenciaAnterior) {
+
+        double beta = tendencia.getBeta();
+        double promedioActual = calcularProm(tendencia, promedioAnterior, tendenciaAnterior);
+
+        double tendenciaActual = beta * (promedioActual - promedioAnterior) + (1 - beta) * tendenciaAnterior;
+
+        return tendenciaActual;
+    }
+
+    /**
+     *Se calcula el promedio para los proximos h periodos
+     * @param proceso El proceso a predecir
+     * @param h La cantidad de minutos a predecir en el futuro
+     */
+    public double predecir(Proceso proceso, int h) throws PrediccionException {
+
+        estadoTendencia = proceso.getTanque().getEstadoPrediccionTendencia();
+
+        if (estadoTendencia != null) {
+            tendencia = buscar(proceso, estadoTendencia.getLastTendencia());
+            if (tendencia != null) {
+                return Mat.round(tendencia.getPromedioAnterior() + tendencia.getTendenciaAnterior() * h, 3);
+            } else {
+                throw new PrediccionException("No hay control todavía");
+            }
+        } else {
+            throw new PrediccionException("No hay control todavía");
+        }
+    }
+}

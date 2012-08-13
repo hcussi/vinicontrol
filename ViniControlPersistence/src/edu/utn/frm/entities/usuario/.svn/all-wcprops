@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/usuario
+END
+TipoPrivilegio.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/usuario/TipoPrivilegio.java
+END
+Usuario.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/usuario/Usuario.java
+END
+Privilegio.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/usuario/Privilegio.java
+END
+Rol.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/usuario/Rol.java
+END
+EncriptadorPassword.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/usuario/EncriptadorPassword.java
+END

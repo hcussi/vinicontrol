@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/comunicacion
+END
+Paridad.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/comunicacion/Paridad.java
+END
+BitParada.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/comunicacion/BitParada.java
+END
+ConfiguracionConexion.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/comunicacion/ConfiguracionConexion.java
+END
+ConexionSerie.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/svn_vinicontrol/!svn/ver/94/trunk/ViniControlPersistence/src/edu/utn/frm/entities/comunicacion/ConexionSerie.java
+END
+ConexionIP.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/svn_vinicontrol/!svn/ver/66/trunk/ViniControlPersistence/src/edu/utn/frm/entities/comunicacion/ConexionIP.java
+END
+TipoConexion.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/comunicacion/TipoConexion.java
+END

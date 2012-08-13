@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/svn_vinicontrol/!svn/ver/5/trunk/ViniControlBusiness/src/edu/utn/frm/action/comunicacion/estrategia
+END
+GestorComunicacionEnviar.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/svn_vinicontrol/!svn/ver/77/trunk/ViniControlBusiness/src/edu/utn/frm/action/comunicacion/estrategia/GestorComunicacionEnviar.java
+END
+FactoriaEstrategia.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/svn_vinicontrol/!svn/ver/10/trunk/ViniControlBusiness/src/edu/utn/frm/action/comunicacion/estrategia/FactoriaEstrategia.java
+END
+EstrategiaComunicacionTCP.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/svn_vinicontrol/!svn/ver/17/trunk/ViniControlBusiness/src/edu/utn/frm/action/comunicacion/estrategia/EstrategiaComunicacionTCP.java
+END
+EstrategiaComunicacionSerie.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/svn_vinicontrol/!svn/ver/17/trunk/ViniControlBusiness/src/edu/utn/frm/action/comunicacion/estrategia/EstrategiaComunicacionSerie.java
+END
+EstrategiaComunicacionUDP.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/svn_vinicontrol/!svn/ver/86/trunk/ViniControlBusiness/src/edu/utn/frm/action/comunicacion/estrategia/EstrategiaComunicacionUDP.java
+END
+IEstrategiaComunicacion.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/svn_vinicontrol/!svn/ver/17/trunk/ViniControlBusiness/src/edu/utn/frm/action/comunicacion/estrategia/IEstrategiaComunicacion.java
+END
+GestorComunicacionRecibir.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/svn_vinicontrol/!svn/ver/86/trunk/ViniControlBusiness/src/edu/utn/frm/action/comunicacion/estrategia/GestorComunicacionRecibir.java
+END
+GestorComunicacionArmar.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/svn_vinicontrol/!svn/ver/86/trunk/ViniControlBusiness/src/edu/utn/frm/action/comunicacion/estrategia/GestorComunicacionArmar.java
+END

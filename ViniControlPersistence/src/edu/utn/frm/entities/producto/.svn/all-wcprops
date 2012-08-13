@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/producto
+END
+Variedad.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/svn_vinicontrol/!svn/ver/8/trunk/ViniControlPersistence/src/edu/utn/frm/entities/producto/Variedad.java
+END
+Finca.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/svn_vinicontrol/!svn/ver/8/trunk/ViniControlPersistence/src/edu/utn/frm/entities/producto/Finca.java
+END
+MostoEnTanque.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/svn_vinicontrol/!svn/ver/8/trunk/ViniControlPersistence/src/edu/utn/frm/entities/producto/MostoEnTanque.java
+END
+Camion.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_vinicontrol/!svn/ver/8/trunk/ViniControlPersistence/src/edu/utn/frm/entities/producto/Camion.java
+END
+UnidadMedida.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/producto/UnidadMedida.java
+END
+Pesada.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/svn_vinicontrol/!svn/ver/8/trunk/ViniControlPersistence/src/edu/utn/frm/entities/producto/Pesada.java
+END

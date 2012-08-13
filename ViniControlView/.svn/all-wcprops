@@ -1,0 +1,45 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 30
+/svn/svn_vinicontrol/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/svn_vinicontrol/!svn/ver/7/trunk/ViniControlView
+END
+viniControl.log
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/svn_vinicontrol/!svn/ver/92/trunk/ViniControlView/viniControl.log
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/svn_vinicontrol/!svn/ver/7/trunk/ViniControlView/manifest.mf
+END
+log4j.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/svn_vinicontrol/!svn/ver/7/trunk/ViniControlView/log4j.dtd
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/svn_vinicontrol/!svn/ver/90/trunk/ViniControlView/log4j.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/svn_vinicontrol/!svn/ver/7/trunk/ViniControlView/build.xml
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/svn_vinicontrol/!svn/ver/85/trunk/ViniControlView/log4j.xml
+END

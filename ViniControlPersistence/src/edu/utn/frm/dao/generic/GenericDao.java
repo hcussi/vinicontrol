@@ -1,0 +1,241 @@
+/*
+ * GenericDao.java
+ *
+ * Created on 10 de octubre de 2006, 0:16
+ *
+ * To change this template, choose Tools | Template Manager
+ * and open the template in the editor.
+ */
+package edu.utn.frm.dao.generic;
+
+import edu.utn.frm.dao.generic.hql.HqlBuilder;
+import edu.utn.frm.entities.base.EntityBase;
+import edu.utn.frm.entities.usuario.Usuario;
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.FlushModeType;
+import javax.persistence.Persistence;
+
+/**
+ *
+ * @author Proyecto
+ */
+public abstract class GenericDao<E extends EntityBase, ID extends Serializable> {
+
+    private static final EntityManagerFactory entityManagerFactory;
+
+    static {
+        try {
+            entityManagerFactory = Persistence.createEntityManagerFactory("ViniControlPersistencePU");
+        } catch (Throwable ex) {
+            throw new ExceptionInInitializerError(ex);
+        }
+    }
+    private static EntityManager vinicEM;
+
+    public static EntityManager getVinicEM() {
+        if (vinicEM == null || !vinicEM.isOpen()) {
+            vinicEM = entityManagerFactory.createEntityManager();
+        }
+        return vinicEM;
+    }
+    private Class<E> persistentClass;
+    protected EntityTransaction et;
+
+    /**
+     * Usuario actual de la sesion
+     */
+    protected Usuario currentUser;
+    /**
+     * Creates a new instance of GenericDao
+     */
+    public GenericDao(Class<E> pc,Usuario currentUser) {
+        persistentClass = pc;
+        this.currentUser = currentUser;
+        beginTx();
+    }
+
+    /**
+     * Creates a new instance of GenericDao
+     */
+    public GenericDao(Class<E> pc) {
+        persistentClass = pc;
+        beginTx();
+    }
+
+    public void setCurrentUser(Usuario currentUser) {
+        this.currentUser = currentUser;
+    }
+
+    public void init() {
+    }
+
+    public void beginTx() {
+        getVinicEM().setFlushMode(FlushModeType.COMMIT);
+        et = getVinicEM().getTransaction();
+    }
+
+    public E findById(ID id) {
+        return getVinicEM().find(persistentClass, id);
+    }
+
+    @SuppressWarnings("unchecked")
+    public List<E> findAll() {
+
+        return getVinicEM().createNamedQuery(getEntityName() + ".findAll").getResultList();
+    }
+
+    public List<E> findByPropertyName(String propertyName, Object value) {
+        String nameQuery = getEntityName() + ".findBy" + propertyName.replaceFirst(propertyName.substring(0, 1), propertyName.substring(0, 1).toUpperCase());
+        return getVinicEM().createNamedQuery(nameQuery).setParameter(propertyName, value).getResultList();
+    }
+
+//	@SuppressWarnings("unchecked")
+//	public List<T> findAllNotAnulate(){
+//
+//		return grafEM.createNamedQuery(getEntityName()+".findAll").getResultList();
+//	}
+    @SuppressWarnings("unchecked")
+    public List<E> findByFilter(GenericFilter filter) {
+        List<E> list;
+        HqlBuilder builder = new HqlBuilder(getVinicEM());
+        parseFilter(builder, filter);
+        filter.getPaginator().inicializar(builder);
+        list = builder.executeList(filter.getPaginator().getPageNumber(), filter.getPaginator().getPageSize());
+
+        return list;
+    }
+
+    /**
+     * Aca hay que seguir a partir del where
+     * @param builder
+     * @param filter
+     */
+    protected abstract void parseFilter(HqlBuilder builder, GenericFilter filter);
+
+    protected String getEntityName() {
+        return persistentClass.getSimpleName();
+    }
+
+    //@TransactionAttribute(TransactionAttributeType.REQUIRED)
+    public E save(E entity) throws PersistException {
+        try {
+            et.begin();
+            entity.setCurrentUser(currentUser);
+            getVinicEM().persist(entity);
+            getVinicEM().flush();
+            et.commit();
+            return entity;
+        } catch (Exception ex) {
+            try{et.rollback();
+            }catch(Exception e){}
+            ex.printStackTrace();
+            throw new PersistException(ex);
+        }
+    }
+
+    //@TransactionAttribute(TransactionAttributeType.REQUIRED)
+    public List<E> saveList(List<E> listEntity) throws PersistException {
+        try {
+            et.begin();
+            for (E entity : listEntity) {
+                getVinicEM().persist(entity);
+            }
+            getVinicEM().flush();
+            et.commit();
+            return listEntity;
+        } catch (Exception ex) {
+            try{et.rollback();
+            }catch(Exception e){}
+            throw new PersistException(ex);
+        }
+    }
+
+    //@TransactionAttribute(TransactionAttributeType.REQUIRED)
+    public void delete(E entity) throws PersistException {
+        try {
+            et.begin();
+            entity.setCurrentUser(currentUser);
+            getVinicEM().remove(entity);
+            getVinicEM().flush();
+            et.commit();
+        } catch (Exception ex) {
+            try{et.rollback();
+            }catch(Exception e){}
+            throw new PersistException(ex);
+        }
+    }
+
+    //@TransactionAttribute(TransactionAttributeType.REQUIRED)
+    public E anulate(E entity) throws PersistException {
+        entity.setAnulado(!entity.isAnulado());
+        return update(entity);
+    }
+
+    //@TransactionAttribute(TransactionAttributeType.REQUIRED)
+    public E update(E entity) throws PersistException {
+        try {
+            et.begin();
+            entity.setCurrentUser(currentUser);
+            E retEntity = getVinicEM().merge(entity);
+            getVinicEM().flush();
+            if(!getVinicEM().getFlushMode().equals(FlushModeType.AUTO)) et.commit();
+            return retEntity;
+        } catch (Exception ex) {
+            try{et.rollback();
+            }catch(Exception e){}
+            throw new PersistException(ex);
+        }
+    }
+
+    //@TransactionAttribute(TransactionAttributeType.REQUIRED)
+    public void removeList(List<E> lista) throws PersistException {
+        try {
+            et.begin();
+            for (E t : lista) {
+                getVinicEM().remove(t);
+            }
+            getVinicEM().flush();
+            et.commit();
+        } catch (Exception ex) {
+            try{et.rollback();
+            }catch(Exception e){}
+            throw new PersistException(ex);
+        }
+    }
+
+    public void refresh(E entity) throws PersistException {
+        try {
+            et.begin();
+            getVinicEM().refresh(entity);
+            getVinicEM().flush();
+            et.commit();
+        } catch (Exception ex) {
+            try{et.rollback();
+            }catch(Exception e){}
+            throw new PersistException(ex);
+        }
+    }
+
+    /**
+     * recupera un nuevo entityManager
+     *
+     */
+    protected void restoreEntityManager() {
+        closeEntityManager();
+        vinicEM = getVinicEM();
+    }
+
+    /**
+     * limpia el entityManager
+     *
+     */
+    protected void closeEntityManager() {
+        vinicEM.clear();
+        vinicEM = null;
+    }
+}

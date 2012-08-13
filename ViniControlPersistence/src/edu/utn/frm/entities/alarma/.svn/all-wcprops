@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/entities/alarma
+END
+AlarmaNivelAzucar.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/svn_vinicontrol/!svn/ver/94/trunk/ViniControlPersistence/src/edu/utn/frm/entities/alarma/AlarmaNivelAzucar.java
+END
+AlarmaRemontaje.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/svn_vinicontrol/!svn/ver/94/trunk/ViniControlPersistence/src/edu/utn/frm/entities/alarma/AlarmaRemontaje.java
+END
+AlarmaNivelCapacidad.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/svn_vinicontrol/!svn/ver/94/trunk/ViniControlPersistence/src/edu/utn/frm/entities/alarma/AlarmaNivelCapacidad.java
+END
+AlarmaTemperatura.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/svn_vinicontrol/!svn/ver/94/trunk/ViniControlPersistence/src/edu/utn/frm/entities/alarma/AlarmaTemperatura.java
+END
+Alarma.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/svn_vinicontrol/!svn/ver/94/trunk/ViniControlPersistence/src/edu/utn/frm/entities/alarma/Alarma.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/svn_vinicontrol/!svn/ver/5/trunk/ViniControlBusiness/src/edu/utn/frm/action/exception
+END
+ReporteException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/svn_vinicontrol/!svn/ver/5/trunk/ViniControlBusiness/src/edu/utn/frm/action/exception/ReporteException.java
+END
+GestorGeneralEstadoException.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/svn_vinicontrol/!svn/ver/10/trunk/ViniControlBusiness/src/edu/utn/frm/action/exception/GestorGeneralEstadoException.java
+END
+ComunicacionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/svn_vinicontrol/!svn/ver/5/trunk/ViniControlBusiness/src/edu/utn/frm/action/exception/ComunicacionException.java
+END
+TrazabilidadException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/svn_vinicontrol/!svn/ver/95/trunk/ViniControlBusiness/src/edu/utn/frm/action/exception/TrazabilidadException.java
+END
+PrediccionException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/svn_vinicontrol/!svn/ver/76/trunk/ViniControlBusiness/src/edu/utn/frm/action/exception/PrediccionException.java
+END

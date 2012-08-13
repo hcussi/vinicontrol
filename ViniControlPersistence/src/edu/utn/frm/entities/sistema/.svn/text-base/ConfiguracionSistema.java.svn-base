@@ -1,0 +1,133 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package edu.utn.frm.entities.sistema;
+
+import edu.utn.frm.entities.base.EntityBase;
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.Table;
+
+import javax.persistence.Transient;
+import javax.persistence.UniqueConstraint;
+import org.hibernate.annotations.NamedQueries;
+import org.hibernate.annotations.NamedQuery;
+import org.hibernate.validator.Length;
+
+/**
+ *
+ * @author Proyecto
+ */
+@Entity
+@Table(name = "CONFIGURACION_SISTEMA",
+uniqueConstraints = {@UniqueConstraint(columnNames = {"id"})})
+@Inheritance(strategy = InheritanceType.JOINED)
+@NamedQueries({
+    @NamedQuery(name = "ConfiguracionSistema.findAll", query = "select e from ConfiguracionSistema e "),
+    @NamedQuery(name = "ConfiguracionSistema.findById", query = "select e from ConfiguracionSistema e where id = :id")
+})
+public class ConfiguracionSistema extends EntityBase {
+
+    private String cuit;
+    private String direccion;
+    private String empresa;
+    private Boolean funcionamientoAutomatico;
+    private String razonSocial;
+
+    public ConfiguracionSistema() {
+        this.funcionamientoAutomatico = true;
+    }
+
+    /**
+     * @return the cuit
+     */
+    @Length(min = 13, max = 13, message = "El CUIT de la Configuración del Sistema debe estar entre {min} y {max} caracteres")
+    public String getCuit() {
+        return cuit;
+    }
+
+    /**
+     * @param cuit the cuit to set
+     */
+    public void setCuit(String cuit) {
+        this.cuit = cuit;
+    }
+
+    /**
+     * @return the direccion
+     */
+    @Length(min = 0, max = 50, message = "La Dirección de la Empresa debe estar entre {min} y {max} caracteres")
+    public String getDireccion() {
+        return direccion;
+    }
+
+    /**
+     * @param direccion the direccion to set
+     */
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    /**
+     *
+     * @return the empresa
+     */
+    @Length(min=0,max=50,message="El Nombre de la Empresa de la Configuración del Sistema debe estar entre {min} y {max} caracteres")
+    public String getEmpresa() {
+        return empresa;
+    }
+
+    /**
+     *
+     * @param empresa the empresa to set
+     */
+    public void setEmpresa(String empresa) {
+        this.empresa = empresa;
+    }
+
+    /**
+     *
+     * @return the razonSocial
+     */
+    @Length(min=3,max=50,message="La Razón Social de la Configuración del Sistema debe estar entre {min} y {max} caracteres")
+    public String getRazonSocial() {
+        return razonSocial;
+    }
+
+    /**
+     *
+     * @param razonSocial the razonSocial to set
+     */
+    public void setRazonSocial(String razonSocial) {
+        this.razonSocial = razonSocial;
+    }
+
+    /**
+     *
+     * @return the funcionamientoAutomatico
+     */
+    public Boolean getFuncionamientoAutomatico() {
+        return funcionamientoAutomatico;
+    }
+
+    /**
+     *
+     * @param funcionamientoAutomatico the funcionamientoAutomatico to set
+     */
+    public void setFuncionamientoAutomatico(Boolean funcionamientoAutomatico) {
+        this.funcionamientoAutomatico = funcionamientoAutomatico;
+    }
+
+    @Override
+    @Transient
+    public String getConstraintErrorMessage() {
+        return "No se puede guardar, el id ya existe";
+    }
+
+    public ConfiguracionSistema copy() {
+        return null;
+    }
+    
+}

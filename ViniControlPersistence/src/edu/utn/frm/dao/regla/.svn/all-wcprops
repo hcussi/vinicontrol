@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/regla
+END
+ReglaControlDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/regla/ReglaControlDao.java
+END
+ReglaControlNivelFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/regla/ReglaControlNivelFilter.java
+END
+ReglaControlFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/regla/ReglaControlFilter.java
+END
+ReglaControlRemontajeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/regla/ReglaControlRemontajeDao.java
+END
+ReglaControlRemontajeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/regla/ReglaControlRemontajeFilter.java
+END
+ReglaControlTemperaturaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/regla/ReglaControlTemperaturaDao.java
+END
+ReglaControlTemperaturaFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/regla/ReglaControlTemperaturaFilter.java
+END
+ReglaControlNivelDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/svn_vinicontrol/!svn/ver/3/trunk/ViniControlPersistence/src/edu/utn/frm/dao/regla/ReglaControlNivelDao.java
+END
